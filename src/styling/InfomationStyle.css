@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .results-container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .text-container, .images {
+    border: grey 2px solid;
+    flex: 0 0 30%;
+    height: 50vh;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .text-container p {
+    text-align: left;
+    width: 60%;
+    font-family: 'Oxanium', cursive;
+    font-size: x-large;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+  }
