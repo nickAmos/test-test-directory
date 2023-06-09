@@ -1,0 +1,29 @@
+header {
+    margin: 0;
+    padding: 0;
+    background-color: #8fdbf4;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#left-box {
+    padding-left: 5%;
+}
+
+#right-box {
+    padding-right: 5%;
+    height: 50px;
+    aspect-ratio: 1 / 1;
+}
+
+#left-box h1 {
+    font-family: 'Oxanium', cursive;
+}
+
+.react-icons {
+    vertical-align: middle;
+}
+
