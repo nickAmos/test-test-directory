@@ -1,5 +1,6 @@
 
 import { BloodTests } from "../Tests"
+import '../styling/Information.css';
 
 export default function Infomation() {
 
@@ -18,6 +19,7 @@ export default function Infomation() {
 
             <div className="images">
                 <h3>{BloodTests[0].tube}</h3>
+                <img src="../src/images/EDTA.png" alt="tube"/>
          
             </div>
             
