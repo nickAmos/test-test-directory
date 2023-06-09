@@ -1,0 +1,14 @@
+.search-container {
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    text-align: center;
+    width: 30vw;
+    height: 2rem;
+    font-size: larger;
+}

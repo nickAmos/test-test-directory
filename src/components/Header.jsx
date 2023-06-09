@@ -1,4 +1,4 @@
-import './Header.css';
+import '../styling/Header.css';
 import { GrTestDesktop } from 'react-icons/gr';
 
 

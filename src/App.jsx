@@ -1,7 +1,8 @@
 
-import './App.css'
-import Header from './Header'
-import Infomation from './Infomation'
+import './styling/App.css'
+import Header from './components/Header'
+import Infomation from './components/Infomation'
+import SearchBar from './components/SearchBar'
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <Header/>
+      <SearchBar />
       <Infomation />
     </>
   )
