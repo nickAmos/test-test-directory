@@ -1,8 +1,9 @@
 import '../styling/InfomationStyle.css';
-import { BloodTests } from "../Tests"
 
 
-export default function Infomation(props) {
+
+export default function Infomation({testName}) {
+
 
 
     return (
@@ -10,16 +11,13 @@ export default function Infomation(props) {
         <div className="results-container">
 
             <div className="text-container">
-                <p>{BloodTests[0].name}</p>
-                <p>Minimum volume: {BloodTests[0].minVolume} ml</p>
-                <p>Minimum volume peadiatric: {BloodTests[0].minVolumePaed} ml</p>
-                <p>Department: {BloodTests[0].testingDepartment}</p>
+            <h1>{testName}</h1>
+            
                 
             </div>
 
             <div className="images">
-                <h3>{BloodTests[0].tube}</h3>
-                <img src={props.image} alt="tube"/>
+                
          
             </div>
             
