@@ -3,7 +3,7 @@ import '../styling/InfomationStyle.css';
 
 
 
-export default function Infomation({testName, testInfo}) {
+export default function Infomation({testName, testInfo, collapse}) {
 
 const [laboratory, setLaboratory] = useState('');
 const [altNames, setAltNames] = useState('');
@@ -12,6 +12,7 @@ const [container, setContainer] = useState('');
 const [minVol, setMinVol] = useState('');
 const [minVolPaed, setMinVolPaed] = useState('');
 const [testcode, setTestcode] = useState('');
+const [show, setShow] = useState(false);
 
 
 useEffect(() => {
@@ -46,7 +47,7 @@ useEffect(() => {
 
 }, [testInfo]);
 
-let collapse = '';
+
 
 if (altNames) {
     if (altNames.length >= 15) {
@@ -61,10 +62,10 @@ function showNames() {
     const show = document.getElementById('show');
     
     if (hidden.style.display === 'none') {
-        show.innerHTML = 'show less'
+        setShow(true);
         hidden.style.display = "block";
     } else {
-        show.innerHTML = 'show more';
+        setShow(false);
       hidden.style.display = "none";
     }
     }
@@ -77,15 +78,15 @@ function showNames() {
 
             <div className="text-container">
             <h1>{testName}</h1>
-            <p>{laboratory}</p>
+            <p id='info'>Testing department: <span id='variable' > {laboratory}</span></p>
             
-            {altNames && !collapse ? <span>Alternative Names: {altNames} </span> : null} {(altNames && collapse) ? <span>Alternative Names: <a id='show' onClick={showNames}>show more</a></span> : null} {(altNames && !collapse) ? <span>{altNames}</span> : null}
-            <div id='hiddenNames'>{altNames}</div>
-            <p>{specimen}</p>
-            <p>{container}</p>
-            {(minVol != 'None') ? <p>Minimum Volume: {minVol}</p> : null}
-            {(minVolPaed != 'None') ? <p>Minimum Paediatric Volume: {minVolPaed}</p> : null}
-            <p>{testcode}</p>
+             {(altNames) ? <a id='showAnchor' onClick={showNames}>{show ? <span id='show'>Show less</span> : <span id='show'>Show alternate names </span>}</a> : null}
+            <div id='hiddenNames'>{altNames ? <span id='variable'>{altNames}</span> : null}</div>
+            <p id='info'>Specimen type: <span id='variable' >{specimen}</span></p>
+            <p id='info'>Container: <span id='variable'>{container}</span></p>
+            {(minVol != 'None') ? <p id='info'>Minimum Volume: <span id='variable' >{minVol}</span></p> : null}
+            {(minVolPaed != 'None') ? <p id='info'> Minimum Paediatric Volume: <span id='variable' >{minVolPaed}</span></p> : null}
+            <p id='info'>CSR Test code: <span id='variable' >{testcode}</span></p>
             
                 
             </div>
@@ -100,3 +101,14 @@ function showNames() {
     )
 
 }
+
+
+
+
+
+
+
+/* 
+{altNames && !collapse ? <span>Alternative Names: {altNames} </span> : null} {(altNames && collapse) ? <span>Alternative Names: <a id='show' onClick={showNames}>{show ? <span>show less</span> : <span>show more</span>}</a></span> : null} {(altNames && !collapse) ? <span>{altNames}</span> : null}
+            <div id='hiddenNames'>{altNames}</div>
+*/

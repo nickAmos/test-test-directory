@@ -16,7 +16,9 @@
   .text-container, .images {
     border: grey 2px solid;
     
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
+    max-height: 80vh;
   }
 
   .text-container {
@@ -31,14 +33,15 @@
     display: none;
   }
 
-  #show {
+  #showAnchor {
     cursor: pointer;
-    
+  
   }
 
-  #show :hover {
-    color: red;
-    font-size: xx-large;
+  #show:hover {
+    color: black;
+    font-size: x-large;
+    border-bottom: black solid 1px;
   }
  
 
@@ -49,11 +52,17 @@
     justify-content: space-evenly;
   }
 
-  .text-container p, .text-container span, #hiddenNames {
+
+  #variable {
+    color: grey;
+  }
+
+  .text-container p, .text-container span, #hiddenNames, .text-container a, .text-container div {
     text-align: left;
     width: 60%;
     font-family: 'Oxanium', cursive;
     font-size: x-large;
+    padding-top: 30px;
   }
 
   img {

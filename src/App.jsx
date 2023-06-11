@@ -14,23 +14,28 @@ function App() {
 
   const [testName, setTestName] = useState(arrayTestName[1]);
   const [testInfo, setTestInfo] = useState(arrayTestInfo[1]);
+  
+
 
 
   //add states for all pieces of info we want to display. 
 
-
+let collapse = '';
 
 function handleClick() {
   let randomNumber = Math.floor(Math.random() * 1032);
   setTestName(arrayTestName[randomNumber]);
   setTestInfo(arrayTestInfo[randomNumber]);
+  
 }
+
+
 
   return (
     <>
       <Header/>
       <SearchBar handleClick={handleClick}/>
-      <Infomation  testName={testName} testInfo={testInfo}/>
+      <Infomation  testName={testName} testInfo={testInfo} collapse={collapse}/>
     </>
   )
 }
