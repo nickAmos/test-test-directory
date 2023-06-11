@@ -3,7 +3,7 @@ import './styling/App.css'
 import Header from './components/Header'
 import Infomation from './components/Infomation'
 import SearchBar from './components/SearchBar'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { arrayTestInfo } from './components/jsontests'
 import { arrayTestName } from './components/jsontests'
 
@@ -15,6 +15,7 @@ function App() {
   const [testName, setTestName] = useState(arrayTestName[1]);
   const [testInfo, setTestInfo] = useState(arrayTestInfo[1]);
 
+
   //add states for all pieces of info we want to display. 
 
 
@@ -23,15 +24,13 @@ function handleClick() {
   let randomNumber = Math.floor(Math.random() * 1032);
   setTestName(arrayTestName[randomNumber]);
   setTestInfo(arrayTestInfo[randomNumber]);
-  console.log(testInfo);
 }
-  
 
   return (
     <>
       <Header/>
       <SearchBar handleClick={handleClick}/>
-      <Infomation  testName={testName}/>
+      <Infomation  testName={testName} testInfo={testInfo}/>
     </>
   )
 }
