@@ -1,0 +1,51 @@
+.loading-container {
+    height: 100vh;
+    background-color: #8fdbf4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+#heading, #footer  {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 7rem;
+}
+
+
+.heading-container {
+    align-self: flex-start;
+    
+}
+
+.search-container {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-container {
+    align-self: flex-end;
+    
+}
+
+.heading-container {
+    flex: 0 0 20%;
+}
+
+.search {
+    flex: 0 0 60%;
+    
+}
+.footer-container {
+    flex: 0 0 15%;
+    
+}
+
+#heading {
+    padding-left: 30px;
+}
+
+#footer {
+    padding-top: 50px;
+    padding-right: 30px;
+}

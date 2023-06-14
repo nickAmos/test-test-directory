@@ -32,8 +32,9 @@ input:focus::placeholder {
 
 
  .dropdown {
+  background-color: white;
   min-height: 0px;
-  max-height: 30vh;
+  max-height: 50vh;
   min-width: 0px;
   max-width: 70vw;
   overflow-y: auto;
@@ -53,6 +54,7 @@ input:focus::placeholder {
   font-family: 'Oxanium', cursive;
   font-size: 1.5rem;
   padding: 10px 5px;
+  border-bottom: solid black 1px;
   
   
  }

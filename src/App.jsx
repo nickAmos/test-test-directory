@@ -1,19 +1,20 @@
 
 import './styling/App.css'
-import Header from './components/Header'
+
 import Infomation from './components/Infomation'
 import SearchBar from './components/SearchBar'
 import { useEffect, useState } from 'react'
 import { arrayTestInfo } from './components/jsontests'
 import { arrayTestName } from './components/jsontests'
+import Landing from './components/Landing'
 
 
 
 function App() {
 
 
-  const [testName, setTestName] = useState(arrayTestName[1]);
-  const [testInfo, setTestInfo] = useState(arrayTestInfo[1]);
+  const [testName, setTestName] = useState(null);
+  const [testInfo, setTestInfo] = useState(null);
   
 
 
@@ -25,16 +26,17 @@ let collapse = '';
 function handleClick(newTest) {
   setTestName(arrayTestName[newTest]);
   setTestInfo(arrayTestInfo[newTest]);
-  
 }
 
 
 
   return (
     <>
-      <Header/>
-      <SearchBar handleClick={handleClick}/>
-      <Infomation  testName={testName} testInfo={testInfo} collapse={collapse}/>
+      
+      {!testName ?  <Landing handleClick={handleClick}/> : null}
+     
+ 
+      {testName ? <Infomation  testName={testName} testInfo={testInfo} collapse={collapse} handleClick={handleClick}/> : null }
     </>
   )
 }

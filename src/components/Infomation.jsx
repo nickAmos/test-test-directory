@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import '../styling/InfomationStyle.css';
+import SearchBar from './SearchBar';
+import Header from './Header'
 
 
 
-export default function Infomation({testName, testInfo, collapse}) {
+export default function Infomation({testName, testInfo, collapse, handleClick}) {
 
 const [laboratory, setLaboratory] = useState('');
 const [altNames, setAltNames] = useState('');
@@ -76,7 +78,10 @@ function showNames() {
 
     return (
         <>
+         <Header/>
         <div className="results-container">
+
+        <SearchBar handleClick={handleClick}/>
 
             <div className="text-container">
             <h1 id='testName'>{testName}</h1>
