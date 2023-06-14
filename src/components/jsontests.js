@@ -15306,7 +15306,49 @@ const tests = {
 export const arrayTestInfo = Object.values(tests); 
 export const arrayTestName = Object.keys(tests);
 
+export const SearchableArray = [];
+
+for (let i = 0; i<arrayTestName.length; i++) {
+    let stringToPush = ''
+    let testCode = ''
+    let altNames = ''
+    if (arrayTestInfo[i]['Test Code']) {
+        testCode = arrayTestInfo[i]['Test Code'];
+    }
+    if (arrayTestInfo[i]['Alternate Names']) {
+        altNames = arrayTestInfo[i]['Alternate Names'];
+    }
+    stringToPush = `${testCode} | ${arrayTestName[i]} | ${altNames}`
+    SearchableArray.push(stringToPush);
+}
 
 
-console.log(`Test Name: ${arrayTestName[3]} Cerner: ${arrayTestInfo[3]['Cerner Test Name']}`)
 
+
+
+
+//console.log(`${arrayTestName.length} ${arrayTestInfo[0]['Test Code']} ${arrayTestName[0]} ${arrayTestInfo[0]['Alternate Names']}`)
+
+
+
+
+
+/*  "Vitamin D": {
+            "Alternate Names": "25 OH Vitamin D, Cholecalciferol, Vitamin D, Vit D, Vitamin D3",
+            "Ordering Information": "Requests for Vitamin D must state one of the following indications, as per MBS. Testing may not be performed without valid clinical notes. Vit D testing is available for a patient who: (a) has signs or symptoms of osteoporosis or osteomalacia; or (b) has increased alkaline phosphatase and otherwise normal liver function tests; or (c) has hyperparathyroidism, hypo- or hypercalcaemia, or hypophosphataemia; or (d) is suffering from malabsorption (for example, because the patient has cystic fibrosis, short bowel syndrome, inflammatory bowel disease or untreated coeliac disease, or has had bariatric surgery); or (e) has deeply pigmented skin, or chronic and severe lack of sun exposure for cultural, medical, occupational or residential reasons; or (f) is taking medication known to decrease 25OH-D levels (for example, anticonvulsants); or (g) has chronic renal failure or is a renal transplant recipient; or (h) is less than 16 years of age and has signs or symptoms of rickets; or (i) is an infant whose mother has established vitamin D deficiency; or (j) is a exclusively breastfed baby and has at least one other risk factor mentioned in a paragraph in this item; or (k) has a sibling who is less than 16 years of age and has vitamin D deficiency Circulating levels of 25 OH Vitamin D are the best indicator of Vitamin D status. Unit conversion: nmol/L divided by 2.5 = ng/ml",
+            "Cerner Test Name": "25 Hydroxy Vitamin D Level",
+            "Laboratory": "Biochemistry",
+            "Specimen": "Blood",
+            "Container": "Serum tube (gold cap OR red cap w. yellow insert)",
+            "Collection Instruction": "Collect at room temperature",
+            "Additional Collection Instructions": "Haemolysed samples will not be analysed.",
+            "Minimum Adult Volume": "5mL",
+            "Minimum Paediatric Volume": "None",
+            "Frequency": "Daily",
+            "Reference Interval": "Reference Interval > 50 nmol/L Mild deficiency 25 - 50 nmol/L Moderate deficiency 12.5 - 25 nmol/L Severe deficiency < 12.5 nmol/L *The level of 25 OH Vit D regarded as desirable for general health is > 75 nmol/L",
+            "Test Code": "VITD",
+            "Container ID": "S, SP",
+            "Storage Instructions": "Store at 4\u00b0C",
+            "Additional (Storage) Instructions": "LH plasma and EDTA plasma give results with a mean bias of 22% compared to serum. Hence these specimen types are not routinely accepted. In rare circumstances, LH and EDTA may be used but this must be approved by senior biochemistry staff. Such results should then be released with a comment regarding the bias. Haemolysed or grossly lipemic samples will be rejected. Add ons: Stable for 120 hours of sample collection if kept at 2-8\u00b0C; longer if stored frozen (-20\u00b0C or below).",
+            "Transport Instructions": "Transport at 4\u00b0C"
+        }, */

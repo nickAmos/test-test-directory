@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../styling/InfomationStyle.css';
-
+import { SearchableArray } from './jsontests';
 
 
 export default function Infomation({testName, testInfo, collapse}) {
