@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-color: #6969dd
   }
   
   .results-container {
@@ -38,6 +39,12 @@
   
   }
 
+  #testName {
+    font-family: 'Oxanium', cursive;
+    font-size: 3.5rem;
+    padding-bottom: 15px;
+  }
+
   #show:hover {
     color: black;
     font-size: x-large;
@@ -51,6 +58,7 @@
     align-items: center;
     justify-content: space-evenly;
   }
+  
 
 
   #variable {
@@ -62,7 +70,7 @@
     width: 60%;
     font-family: 'Oxanium', cursive;
     font-size: x-large;
-    padding-top: 30px;
+    margin-bottom: 30px;
   }
 
   img {

@@ -22,10 +22,9 @@ function App() {
 
 let collapse = '';
 
-function handleClick() {
-  let randomNumber = Math.floor(Math.random() * 1032);
-  setTestName(arrayTestName[randomNumber]);
-  setTestInfo(arrayTestInfo[randomNumber]);
+function handleClick(newTest) {
+  setTestName(arrayTestName[newTest]);
+  setTestInfo(arrayTestInfo[newTest]);
   
 }
 

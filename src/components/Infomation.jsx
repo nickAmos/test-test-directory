@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../styling/InfomationStyle.css';
-import { SearchableArray } from './jsontests';
+
 
 
 export default function Infomation({testName, testInfo, collapse}) {
@@ -13,6 +13,8 @@ const [minVol, setMinVol] = useState('');
 const [minVolPaed, setMinVolPaed] = useState('');
 const [testcode, setTestcode] = useState('');
 const [show, setShow] = useState(false);
+
+
 
 
 useEffect(() => {
@@ -77,7 +79,7 @@ function showNames() {
         <div className="results-container">
 
             <div className="text-container">
-            <h1>{testName}</h1>
+            <h1 id='testName'>{testName}</h1>
             <p id='info'>Testing department: <span id='variable' > {laboratory}</span></p>
             
              {(altNames) ? <a id='showAnchor' onClick={showNames}>{show ? <span id='show'>Show less</span> : <span id='show'>Show alternate names </span>}</a> : null}
