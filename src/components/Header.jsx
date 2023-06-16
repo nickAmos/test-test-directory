@@ -8,7 +8,7 @@ export default function Header() {
     return(
         <header>
             <div id='left-box'>
-                <h1>Pathology assistant</h1>
+                <h1>Nick & Ryan Test Directory</h1>
             </div>
 
             <div id='right-box'>

@@ -1750,7 +1750,7 @@ const tests = {
             "Minimum Adult Volume": "9mL",
             "Minimum Paediatric Volume": "1mL",
             "Frequency": "Daily",
-            "Test Code": "GS",
+            "Test Code": "BBANK",
             "Container ID": "EB, SB, EW, EWP",
             "Laboratory Notes": "Instructions for: Metropolitan and Regional Specimen Receptions Code for BBANK and forward sample to the Blood Bank Department."
         },
@@ -4341,7 +4341,7 @@ const tests = {
             "Minimum Adult Volume": "9mL",
             "Minimum Paediatric Volume": "1mL",
             "Frequency": "Daily",
-            "Test Code": "GS",
+            "Test Code": "BBANK",
             "Container ID": "EB, SB, EW, EWP",
             "Laboratory Notes": "Instructions for: Metropolitan and Regional Specimen Receptions Code for BBANK and forward sample to the Blood Bank Department."
         },
@@ -15352,3 +15352,13 @@ for (let i = 0; i<arrayTestName.length; i++) {
             "Additional (Storage) Instructions": "LH plasma and EDTA plasma give results with a mean bias of 22% compared to serum. Hence these specimen types are not routinely accepted. In rare circumstances, LH and EDTA may be used but this must be approved by senior biochemistry staff. Such results should then be released with a comment regarding the bias. Haemolysed or grossly lipemic samples will be rejected. Add ons: Stable for 120 hours of sample collection if kept at 2-8\u00b0C; longer if stored frozen (-20\u00b0C or below).",
             "Transport Instructions": "Transport at 4\u00b0C"
         }, */
+
+
+
+       let obj = 
+       {'Serum tube (gold cap OR red cap w. yellow insert)' : 580,
+       'EDTA' : 320,
+       'citrate' : 100,
+       '1x lithium heparin 1 x edta': 20,
+       'sterile pot': 300
+    }
