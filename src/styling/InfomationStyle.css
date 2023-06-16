@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     
+    
   }
   
   .mainbody-container {
@@ -9,6 +10,7 @@
     height: 150vh;
     display: flex;
     flex-direction: column;
+    position: relative;
     
     
   }
@@ -53,6 +55,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
+    position: sticky;
     align-self: flex-start;
   }
 
@@ -61,8 +64,6 @@
     font-size: 2.2rem;
     border-bottom: black solid 1px;
   }
- 
-
   .text-container {
     display: flex;
     flex-direction: column;
@@ -87,9 +88,26 @@
     margin-bottom: 30px;
   }
 
-  .images {
+  .image-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex: 0 0 40%;
+    padding-right: 50px;
     
   }
+
+  .image-container img {
+   max-width: 100%;
+   min-width: none;
+  }
+
+  .image-container p {
+    font-family: 'Oxanium', cursive;
+    font-size: 2.2rem;
+  }
+
+.collection-instructions {
+  width: 90%;
+}
