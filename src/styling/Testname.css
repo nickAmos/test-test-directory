@@ -1,0 +1,13 @@
+.testName-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+#testName {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 4rem;
+    padding-left: 75px;
+}

@@ -6,15 +6,15 @@ import SearchBar from './components/SearchBar'
 import { useEffect, useState } from 'react'
 import { arrayTestInfo } from './components/jsontests'
 import { arrayTestName } from './components/jsontests'
-import Landing from './components/Landing'
+
 
 
 
 function App() {
 
 
-  const [testName, setTestName] = useState(null);
-  const [testInfo, setTestInfo] = useState(null);
+  const [testName, setTestName] = useState(arrayTestName[0]);
+  const [testInfo, setTestInfo] = useState(arrayTestInfo[0]);
   
 
 
@@ -32,11 +32,9 @@ function handleClick(newTest) {
 
   return (
     <>
-      
-      {!testName ?  <Landing handleClick={handleClick}/> : null}
-     
- 
-      {testName ? <Infomation  testName={testName} testInfo={testInfo} collapse={collapse} handleClick={handleClick}/> : null }
+    
+
+     {testInfo ? <Infomation  testName={testName} testInfo={testInfo} collapse={collapse} handleClick={handleClick}/> : null } 
     </>
   )
 }

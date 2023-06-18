@@ -18,10 +18,9 @@ const selectedTest = (item) => {
     setInput('');
 }
     return (
-        <>
-            <div className="search-container">
-                <input className='SearchBar' placeholder="Search for a test" onChange={handleChange} input={input} type='text'></input>
-                <div className='dropdown' id='dropdown'>
+        <div className='search-container'>
+            <input className='SearchBar' placeholder="Search for a test" onChange={handleChange} input={input} type='text'></input>
+            <div className='dropdown' id='dropdown'>
                     {SearchableArray.filter(item => {
                         const searchTerm = input.toLowerCase();
                         const returnedItem = item.toLowerCase();
@@ -30,12 +29,10 @@ const selectedTest = (item) => {
                     })
                     
                     .map((item) => (
-                        <div className='test-selection' key={item} onClick={() => selectedTest(item)}>{item}</div>
+                        <div className='test-result' key={item} onClick={() => selectedTest(item)}>{item}</div>
                     ))}
-                </div>
             </div>
-           
-        </>
+        </div>
     )
 }
 

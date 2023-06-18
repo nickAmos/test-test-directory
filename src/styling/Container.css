@@ -1,0 +1,13 @@
+.image-container {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 350px;
+    height: 350px;
+    border: grey dotted 2px;
+}

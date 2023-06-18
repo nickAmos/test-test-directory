@@ -1,0 +1,25 @@
+.collector-container {
+    height: auto;
+    background-color: aliceblue;
+}
+
+.collector-header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Oxanium', cursive;
+    padding-left: 75px;
+    font-size: 1.8rem;
+}
+
+.collector-text-container {
+    height: auto;
+}
+
+.collector-text-container #info {
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 1.3rem;
+    padding-left: 115px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}

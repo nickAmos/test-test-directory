@@ -1,12 +1,13 @@
 header {
     margin: 0;
     padding: 0;
-    background-color: #8fdbf4;
+    background-color: #353839 ;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    color: white;
 }
 
 #left-box {
@@ -25,5 +26,6 @@ header {
 
 .react-icons {
     vertical-align: middle;
+    
 }
 

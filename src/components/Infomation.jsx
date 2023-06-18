@@ -2,6 +2,12 @@ import { useEffect, useState } from 'react';
 import '../styling/InfomationStyle.css';
 import SearchBar from './SearchBar';
 import Header from './Header'
+import BasicTestInfo from './BasicTestInfo';
+import CollectorInfo from './CollectorInfo';
+import LaboratoryInfo from './LaboratoryInfo';
+import Testname from './Testname';
+import Container from './Container';
+
 
 
 
@@ -27,7 +33,6 @@ const [addStorage, setAddStorage] = useState('');
 const [labNotes, setLabNotes] = useState('');
 
 const [show, setShow] = useState(false);
-const [dropdown, setdropDown] = useState(false);
 const [src, setSrc] = useState(null);
 
 
@@ -117,7 +122,6 @@ useEffect(() => {
    if (testInfo['Test Code']) {
     setTestcode(testInfo['Test Code']);
    } else {setTestcode(null)};
-   
 
 }, [testInfo]);
 
@@ -129,118 +133,41 @@ if (altNames) {
     } else { collapse = false};
 }
 
-
-
-function showNames() {
-    const hidden = document.getElementById('hiddenNames');
-    const show = document.getElementById('show');
-    
-    if (hidden.style.display === 'none') {
-        setShow(true);
-        hidden.style.display = "block";
-    } else {
-        setShow(false);
-      hidden.style.display = "none";
-    }
-    }
-
-function collectorDropdown() {
-    const getdropdown = document.getElementById('collector-dropdown');
-    setdropDown(!dropdown);
-    if (dropdown) {
-        getdropdown.style.display = 'block';
-    }
-    else { getdropdown.style.display = 'none'};
-}
-
-function laboratoryDropdown() {
-    const getdropdown = document.getElementById('laboratory-dropdown');
-    setdropDown(!dropdown);
-    if (dropdown) {
-        getdropdown.style.display = 'block';
-    }
-    else { getdropdown.style.display = 'none'};
-}
-
-
-
     return (
         <>
         <Header/>
+
         <div className='SearchBar-container'>
             <SearchBar handleClick={handleClick}/>
+        </div>
+        <div className='Testname-container'>
+            <Testname testName={testName} />
         </div>
 
         <div className="mainbody-container">
 
-            <div className='testName-container'>
-                    <h1 id='testName'>{testName}</h1>
-                    <img src={src}/>
-            </div>
-
-            <div className='test-infomation'> 
-
-  
-                <div className="text-container">
-                        
-                            <p id='info'>Specimen type: <span id='variable' >{specimen}</span></p>
-                            <p id='info'>Container: <span id='variable'>{container}</span></p>
-                            {(minVol != 'None') ? <p id='info'>Minimum Volume: <span id='variable' >{minVol}</span></p> : null}
-                            {(minVolPaed != 'None') ? <p id='info'> Minimum Paediatric Volume: <span id='variable' >{minVolPaed}</span></p> : null}
-                            <p id='info'>CSR Test code: <span id='variable' >{testcode}</span></p>
-                            {(laboratory === 'Referred Test') ? <p>Reffered to: {testInfo['External Laboratory']}</p> : <p id='info'>Testing department: <span id='variable' > {laboratory}</span></p> }
-                            {(altNames) ? <a id='showAnchor' onClick={showNames}>{show ? <span id='show'>Show less</span> : <span id='show'>Show alternate names </span>}</a> : null}
-                            <div id='hiddenNames'>{altNames ? <span id='variable'>{altNames}</span> : null}</div>  
+            <div className='basicInfo-container'> 
+                <div className='basicTest'>
+                    <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} laboratory={laboratory} altNames={altNames} />
                 </div>
-
-                <div className='dropdown-container'>
-
-                    <div className='collector-info'>
-                        <button id='collector-header' onClick={collectorDropdown}>
-                            <h2>Collector Infomation</h2>
-                        </button>
-                        <div id='collector-dropdown'>
-                            {collectionInstruct && addCollectInstruct ? <div><h3>Instructions:</h3><p>{collectionInstruct}</p><br></br><p>{addCollectInstruct}</p></div> : null}
-                            {collectionInstruct && !addCollectInstruct  ? <div><h3>Instructions: </h3><p>{collectionInstruct}</p></div> : null}
-                            {!collectionInstruct && addCollectInstruct  ? <div><h3>Instructions: </h3><p>{addCollectInstruct}</p></div> : null}
-                            {notes  ? <div><h3>Notes: </h3><p>{notes}</p></div> : null}
-                            {minVol != 'None'  ? <div><h3>Minimum Volume </h3><p>{minVol}</p></div> : null}
-                            {minVolPaed != 'none'  ? <div><h3>Minimum Volume Paediatric </h3><p>{minVolPaed}</p></div> : null}
-                            {frequency ? <div><h3>Frequency:</h3><p>{frequency}</p></div> : null}
-                        </div>
-                    </div>
-
-                    <div className='laboratory-info'>
-                    <button id='laboratory-header' onClick={laboratoryDropdown}>
-                            <h2>Laboratory Infomation</h2>
-                        </button>
-                        <div id='laboratory-dropdown'>
-                            { storage && addStorage ? <div><h3>Storage:</h3><p>{storage}</p><br></br><p>{addStorage}</p></div> : null}
-                            { storage && !addStorage ? <div><h3>Storage:</h3><p>{storage}</p></div> : null}
-                            { !storage && addStorage ? <div><h3>Storage:</h3><p>{addStorage}</p></div> : null}
-                            { transport && addTransport ? <div><h3>Transport:</h3><p>{transport}</p><br></br><p>{addTransport}</p></div> : null}
-                            { transport && !addTransport ? <div><h3>Transport:</h3><p>{transport}</p></div> : null}
-                            { !transport && addTransport ? <div><h3>Transport:</h3><p>{addTransport}</p></div> : null}
-                            { labNotes ? <div><h3>Notes:</h3><p>{labNotes}</p></div> : null}
-                           
-                        </div>
-                    </div>
-
+                <div className='container-img'>
+                    <Container src={src} />
                 </div>
+            </div>  
 
-                
+            <div className='staffInfo-container'>
+                <div className='collector-info'>
+                    <CollectorInfo collectionInstruct={collectionInstruct} addCollectInstruct={addCollectInstruct} notes={notes} minVol={minVol} minVolPaed={minVolPaed} frequency={frequency} />
+                </div>
+                <div className='laboratory-info'>
+                    <LaboratoryInfo storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes}  />
+                </div>
+            </div>  
 
-            </div>    
         </div>
         </>
     )
 
 }
 
-/* 
-const [storage, setStorage] = useState('');
-const [transport, setTransport] = useState('');
-const [addTransport, setAddTransport] = useState('');
-const [addStorage, setAddStorage] = useState('');
-const [labNotes, setLabNotes] = useState('');
-*/
+

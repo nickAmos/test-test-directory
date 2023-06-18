@@ -1,0 +1,18 @@
+.text-container {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text-container #info {
+    padding-left: 115px;
+    font-family: 'Oxygen', sans-serif;  
+    font-size: 1.8rem;
+}
+
+.text-container #variable {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+}
