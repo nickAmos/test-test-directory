@@ -28,6 +28,7 @@ input:focus::placeholder {
   overflow-x: hidden;
   border-radius: 30px ;
   box-sizing: content-box;
+  margin-bottom: 50px;
  }
 
 
@@ -37,11 +38,12 @@ input:focus::placeholder {
   height: auto;
   font-family: 'Oxanium', cursive;
   font-size: 1.5rem;
-  padding: 10px 5px;
+  padding: 10px 0px 10px 20px;
+  border-bottom: black 1px solid;
   
  }
 
  .test-result:hover {
-    background-color: rgb(255, 0, 128);
+    background-color: #ADD8E6;
     cursor: pointer;
  }
