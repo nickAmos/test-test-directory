@@ -22,7 +22,7 @@
 }
 
 .mainbody-container {
-  background-color: lightcyan;
+  
   height: 130vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
 
 
 .basicInfo-container, .staffInfo-container {
-  border: solid gray 2px;
+  
   flex: 1 1 50%;
 }
 

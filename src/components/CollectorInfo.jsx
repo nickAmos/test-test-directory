@@ -3,7 +3,7 @@ import '../styling/CollectorInfo.css';
 export default function CollectorInfo({collectionInstruct, addCollectInstruct, notes, minVol, minVolPaed, frequency}) {
 
     return (
-
+        <>
             <div className='collector-container'>
                 <div className='collector-header'>
                     <h2>Collector Infomation</h2>
@@ -18,6 +18,7 @@ export default function CollectorInfo({collectionInstruct, addCollectInstruct, n
                             {frequency ? <div><p id='info'><b>Frequency:</b> {frequency}</p></div> : null}
                 </div>
             </div>
+        </>
     
     )
 }

@@ -1,31 +1,46 @@
-header {
+#main-header {
     margin: 0;
     padding: 0;
     background-color: #353839 ;
     height: 10vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
     color: white;
 }
 
-#left-box {
-    padding-left: 5%;
+#left-box, #middle-box, #right-box {
+    width: 33%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #right-box {
-    padding-right: 5%;
-    height: 50px;
-    aspect-ratio: 1 / 1;
-}
-
-#left-box h1 {
-    font-family: 'Oxanium', cursive;
-}
-
-.react-icons {
-    vertical-align: middle;
     
 }
 
+#middle-box h1 {
+    font-family: 'Oxanium', cursive;
+}
+
+
+#contact-path {
+    background-color: #353839;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 5rem;
+    width: auto;
+    color: white;
+    font-family: 'Oxanium', cursive; 
+    font-size: larger;
+    cursor: pointer;
+}
+
+#phone-icon {
+    padding-right: 10px;
+}

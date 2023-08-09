@@ -1,11 +1,9 @@
-
-
-.collector-container {
+.laboratory-container {
     height: auto;
     
 }
 
-.collector-header {
+#laboratory-header {
     height: 5rem;
     display: flex;
     align-items: center;
@@ -14,20 +12,23 @@
     font-size: 1.8rem;
 }
 
-.collector-text-container {
+.laboratory-dropdown {
     height: auto;
+    
 }
 
-.collector-text-container #info {
+.laboratory-dropdown #info {
+    height: auto;
     font-family: 'Oxygen', sans-serif; 
     font-size: 1.3rem;
     padding-left: 115px;
     padding-right: 20px;
     padding-bottom: 20px;
     color: rgb(36, 36, 36);
+    
 }
 
-.collector-text-container #info b {
-    padding-right: 5px;
+.laboratory-dropdown #info b {
     color: black;
+    padding-right: 10px;
 }
