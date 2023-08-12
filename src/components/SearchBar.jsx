@@ -3,6 +3,7 @@ import { SearchableArray } from './jsontests';
 import { useState } from 'react';
 
 
+
 export default function SearchBar({handleClick}) {
 
 const [input, setInput] = useState('');
@@ -18,6 +19,7 @@ const selectedTest = (item) => {
     setInput('');
 }
     return (
+        
         <div className='search-container'>
             <input className='SearchBar' placeholder="Search for a test" onChange={handleChange} input={input} type='text'></input>
             <div className='dropdown' id='dropdown'>

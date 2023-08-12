@@ -1,13 +1,15 @@
 import '../styling/Header.css';
-import { GrTestDesktop } from 'react-icons/gr';
+
 import 'semantic-ui-css/semantic.min.css';
 import {Button, Icon, Reveal} from 'semantic-ui-react';
+
 
 
 export default function Header() {
 
 
     return(
+    
         <header id='main-header'>
             <div id='left-box'>
                 <Reveal animated='move'>
@@ -45,6 +47,7 @@ export default function Header() {
       
             </div>
         </header>
+       
     )
 }
 

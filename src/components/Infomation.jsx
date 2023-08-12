@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import '../styling/InfomationStyle.css';
 import SearchBar from './SearchBar';
 import Header from './Header'
@@ -7,6 +7,7 @@ import CollectorInfo from './CollectorInfo';
 import LaboratoryInfo from './LaboratoryInfo';
 import Testname from './Testname';
 import Container from './Container';
+import {motion, useInView, useAnimation} from 'framer-motion';
 
 
 
@@ -35,7 +36,15 @@ const [labNotes, setLabNotes] = useState('');
 const [show, setShow] = useState(false);
 const [src, setSrc] = useState(null);
 
+const mainControls = useAnimation();
+const ref = useRef(null);
+const isInView = useInView(ref, {once: true});
 
+useEffect(() => {
+    if (isInView) {
+        mainControls.start("visible")
+    }
+}, [isInView]);
 
 useEffect(() => {
     if (testInfo["Laboratory"]) {
@@ -134,38 +143,79 @@ if (altNames) {
 }
 
     return (
-        <>
-        <Header/>
+        <div>
+        <motion.div
+        
+        className='motion-div'
+        variants={{
+            hidden: {opacity: 0, y: -75},
+            visible: {opacity: 1, y: 0}
+        }}
+        initial='hidden'
+        animate='visible'
+        transition={{duration: 0.5, delay:0.25}}>
+            <Header/>
 
-        <div className='SearchBar-container'>
-            <SearchBar handleClick={handleClick}/>
-        </div>
-        <div className='Testname-container'>
-            <Testname testName={testName} />
-        </div>
+            <div className='SearchBar-container'>
+                <SearchBar handleClick={handleClick}/>
+            </div>
+        </motion.div>
+
+        <motion.div
+        
+        variants={{
+            hidden: {opacity: 0, x: -75},
+            visible: {opacity: 1, x: 0}
+        }}
+        initial='hidden'
+        animate='visible'
+        transition={{duration: 0.5, delay:0.5}}>
+            <div className='Testname-container'>
+                <Testname testName={testName} />
+            </div>
+        </motion.div>
 
         <div className="mainbody-container">
 
             <div className='basicInfo-container'> 
-                <div className='basicTest'>
+            
+                <motion.div className='basicTest'
+                variants={{
+                    hidden: {opacity: 0, x: 75},
+                    visible: {opacity: 1, x: 0}
+                }}
+                initial='hidden'
+                animate='visible'
+                transition={{duration: 0.5, delay:0.5}}>
                     <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} laboratory={laboratory} altNames={altNames} />
-                </div>
-                <div className='container-img'>
+                </motion.div>
+
+                <motion.div className='container-img'
+                variants={{
+                    hidden: {opacity: 0, y: 75},
+                    visible: {opacity: 1, y: 0}
+                }}
+                initial='hidden'
+                animate='visible'
+                transition={{duration: 0.5, delay:0.5}}
+                >
                     <Container src={src} />
-                </div>
+                </motion.div>
             </div>  
 
-            <div className='staffInfo-container'>
+            <motion.div className='staffInfo-container'
+            
+            >
                 <div className='collector-info'>
                     <CollectorInfo collectionInstruct={collectionInstruct} addCollectInstruct={addCollectInstruct} notes={notes} minVol={minVol} minVolPaed={minVolPaed} frequency={frequency} />
                 </div>
                 <div className='laboratory-info'>
                     <LaboratoryInfo storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes}  />
                 </div>
-            </div>  
+            </motion.div>  
 
         </div>
-        </>
+        </div>
     )
 
 }

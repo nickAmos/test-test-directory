@@ -11,6 +11,10 @@
     color: white;
 }
 
+.motion.div {
+    background-color: #353839;
+}
+
 #left-box, #middle-box, #right-box {
     width: 33%;
     height: 5rem;
@@ -19,9 +23,6 @@
     justify-content: center;
 }
 
-#right-box {
-    
-}
 
 #middle-box h1 {
     font-family: 'Oxanium', cursive;
