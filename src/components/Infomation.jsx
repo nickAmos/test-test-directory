@@ -7,7 +7,7 @@ import CollectorInfo from './CollectorInfo';
 import LaboratoryInfo from './LaboratoryInfo';
 import Testname from './Testname';
 import Container from './Container';
-import {motion, useInView, useAnimation} from 'framer-motion';
+import Reveal from './Reveal';
 
 
 
@@ -33,18 +33,10 @@ const [addTransport, setAddTransport] = useState('');
 const [addStorage, setAddStorage] = useState('');
 const [labNotes, setLabNotes] = useState('');
 
-const [show, setShow] = useState(false);
+
 const [src, setSrc] = useState(null);
 
-const mainControls = useAnimation();
-const ref = useRef(null);
-const isInView = useInView(ref, {once: true});
 
-useEffect(() => {
-    if (isInView) {
-        mainControls.start("visible")
-    }
-}, [isInView]);
 
 useEffect(() => {
     if (testInfo["Laboratory"]) {
@@ -144,75 +136,49 @@ if (altNames) {
 
     return (
         <div>
-        <motion.div
-        
-        className='motion-div'
-        variants={{
-            hidden: {opacity: 0, y: -75},
-            visible: {opacity: 1, y: 0}
-        }}
-        initial='hidden'
-        animate='visible'
-        transition={{duration: 0.5, delay:0.25}}>
+            <Reveal posY={-100}>
             <Header/>
 
             <div className='SearchBar-container'>
                 <SearchBar handleClick={handleClick}/>
             </div>
-        </motion.div>
+        </Reveal>
 
-        <motion.div
-        
-        variants={{
-            hidden: {opacity: 0, x: -75},
-            visible: {opacity: 1, x: 0}
-        }}
-        initial='hidden'
-        animate='visible'
-        transition={{duration: 0.5, delay:0.5}}>
+        <Reveal posX={-200} delay={0.25}>
             <div className='Testname-container'>
                 <Testname testName={testName} />
             </div>
-        </motion.div>
+        </Reveal>
 
         <div className="mainbody-container">
 
             <div className='basicInfo-container'> 
             
-                <motion.div className='basicTest'
-                variants={{
-                    hidden: {opacity: 0, x: 75},
-                    visible: {opacity: 1, x: 0}
-                }}
-                initial='hidden'
-                animate='visible'
-                transition={{duration: 0.5, delay:0.5}}>
-                    <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} laboratory={laboratory} altNames={altNames} />
-                </motion.div>
-
-                <motion.div className='container-img'
-                variants={{
-                    hidden: {opacity: 0, y: 75},
-                    visible: {opacity: 1, y: 0}
-                }}
-                initial='hidden'
-                animate='visible'
-                transition={{duration: 0.5, delay:0.5}}
-                >
+                
+                <Reveal posX={200} delay={0.5}>
+                    <div className='basicTest'>
+                        <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} laboratory={laboratory} altNames={altNames} />
+                    </div>
+                </Reveal>
+                <Reveal posY={200} delay={0.75}>
+                <div className='container-img'>
                     <Container src={src} />
-                </motion.div>
+                </div>
+                </Reveal>
             </div>  
 
-            <motion.div className='staffInfo-container'
-            
-            >
+            <div className='staffInfo-container'>
+                <Reveal posX={-100} delay={0.5}>
                 <div className='collector-info'>
                     <CollectorInfo collectionInstruct={collectionInstruct} addCollectInstruct={addCollectInstruct} notes={notes} minVol={minVol} minVolPaed={minVolPaed} frequency={frequency} />
                 </div>
+                </Reveal>
+                <Reveal posX={100} delay={0.6}>
                 <div className='laboratory-info'>
                     <LaboratoryInfo storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes}  />
                 </div>
-            </motion.div>  
+                </Reveal>
+            </div>  
 
         </div>
         </div>

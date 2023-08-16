@@ -1,13 +1,15 @@
 .image-container {
     height: 100%;
+    width: 100%;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 
 .image-container img {
     width: 350px;
     height: 350px;
     border: grey dotted 2px;
+    margin-right: 20%;
 }
