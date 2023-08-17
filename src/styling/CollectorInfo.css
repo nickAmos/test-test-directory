@@ -15,7 +15,9 @@
 }
 
 .collector-text-container {
-    height: auto;
+    
+    max-height: 500px;
+    overflow-y: auto;
 }
 
 .collector-text-container #info {

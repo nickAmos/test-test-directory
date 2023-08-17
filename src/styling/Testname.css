@@ -1,6 +1,8 @@
 .testName-container {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -10,4 +12,23 @@
     font-family: 'Oxygen', sans-serif;
     font-size: 4rem;
     padding-left: 75px;
+    margin: 0;
+}
+
+#storage-logo {
+   
+    border-radius: 10%;
+    margin-right: 200px;
+   
+}
+
+#storage-button {
+    background-color: #396d7c;
+    color: white;
+    width: 200px;
+    height: 40px;
+}
+#snowflake {
+    color: white;
+    font-size: xx-large;
 }

@@ -124,6 +124,8 @@ useEffect(() => {
     setTestcode(testInfo['Test Code']);
    } else {setTestcode(null)};
 
+
+
 }, [testInfo]);
 
 
@@ -136,7 +138,7 @@ if (altNames) {
 
     return (
         <div>
-            <Reveal posY={-100}>
+            <Reveal posY={-100} >
             <Header/>
 
             <div className='SearchBar-container'>
@@ -144,9 +146,9 @@ if (altNames) {
             </div>
         </Reveal>
 
-        <Reveal posX={-200} delay={0.25}>
+        <Reveal posX={-200} delay={0.25} testName={testName} refresh={true}>
             <div className='Testname-container'>
-                <Testname testName={testName} />
+                <Testname testName={testName} storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes} />
             </div>
         </Reveal>
 
@@ -155,12 +157,12 @@ if (altNames) {
             <div className='basicInfo-container'> 
             
                 
-                <Reveal posX={200} delay={0.5}>
+                <Reveal posX={200} delay={0.5} testName={testName} refresh={true}>
                     <div className='basicTest'>
                         <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} laboratory={laboratory} altNames={altNames} />
                     </div>
                 </Reveal>
-                <Reveal posY={200} delay={0.75}>
+                <Reveal posY={200} delay={0.75} testName={testName} refresh={true}>
                 <div className='container-img'>
                     <Container src={src} />
                 </div>
