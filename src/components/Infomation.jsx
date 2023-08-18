@@ -107,6 +107,16 @@ useEffect(() => {
         else if (testInfo['Container'] === '9ml EDTA (purple)') {
             setSrc('src/images/9mlEDTA.png');
         }
+//put swabs here to avoid swap to sterile pot 
+        
+        else if (testInfo['Container'].includes('Sterile container') || testInfo['Container'].includes('Sterile Container') ) {
+            setSrc('src/images/sterile-pot.png');
+        }
+        else if (testInfo['Container'].includes('Faecal Pot')) {
+            setSrc('src/images/fecal-pot.png');
+        }
+
+        
         
         else {setSrc(null)};
         

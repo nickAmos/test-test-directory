@@ -1,7 +1,7 @@
 #main-header {
     margin: 0;
     padding: 0;
-    background-color: #353839 ;
+    background-color: #2BAE66 ;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
 }
 
 .motion.div {
-    background-color: #353839;
+    background-color: #2BAE66
 }
 
 #left-box, #middle-box, #right-box {
@@ -30,7 +30,7 @@
 
 
 #contact-path {
-    background-color: #353839;
+    background-color: #2BAE66;
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -44,4 +44,9 @@
 
 #phone-icon {
     padding-right: 10px;
+}
+
+#old-path {
+    background-color: white;
+    color: black;
 }

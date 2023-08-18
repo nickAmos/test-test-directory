@@ -12,6 +12,7 @@ export default function Header() {
     
         <header id='main-header'>
             <div id='left-box'>
+                <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/department-directory'>
                 <Reveal animated='move'>
                     <Reveal.Content visible>
                         <div id='contact-path'>
@@ -26,6 +27,7 @@ export default function Header() {
                         
                     </Reveal.Content>
                 </Reveal>
+                </a>
             </div>
 
             <div id='middle-box'>
@@ -34,7 +36,7 @@ export default function Header() {
 
             <div id='right-box'>
             <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/test-directory'>
-            <Button animated='vertical'>
+            <Button animated='vertical' id='old-path'>
                 <Button.Content hidden>
                   <Icon link name='sign-in alternate' />
                 </Button.Content>        

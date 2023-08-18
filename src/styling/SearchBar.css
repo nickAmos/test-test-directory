@@ -13,6 +13,8 @@
     height: 2.5rem;
     font-size: larger;
     font-family: 'Oxanium', cursive;
+    border: #2BAE66 2px solid;
+    border-radius: 5px;
 }
 
 input:focus::placeholder {
@@ -27,7 +29,7 @@ input:focus::placeholder {
   max-width: 70vw;
   overflow-y: auto;
   overflow-x: hidden;
-  border-radius: 30px ;
+  border-radius: 30px 5px 5px 30px ;
   box-sizing: content-box;
   margin-bottom: 50px;
  }
@@ -40,11 +42,11 @@ input:focus::placeholder {
   font-family: 'Oxanium', cursive;
   font-size: 1.5rem;
   padding: 10px 0px 10px 20px;
-  border-bottom: black 1px solid;
+  border-bottom: #2BAE66 1px solid;
   
  }
 
  .test-result:hover {
-    background-color: #ADD8E6;
+    background-color: #C5FAD5;
     cursor: pointer;
  }

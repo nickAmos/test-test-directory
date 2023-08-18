@@ -36,7 +36,7 @@ export default function Reveal({ children, posX, posY, delay, testName, refresh}
           initial= {{opacity:0, y: posY, x: posX}}
           animate= {mainControl}
           transition={{
-            duration: 0.75, 
+            duration: 0.8, 
             ease: [0, 0.71, 0.2, 1.01],
             delay: delay
             }}
