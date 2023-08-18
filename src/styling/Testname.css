@@ -16,19 +16,48 @@
 }
 
 #storage-logo {
-   
     border-radius: 10%;
     margin-right: 200px;
    
 }
 
-#storage-button {
-    background-color: #396d7c;
-    color: white;
+#store-text {
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+}
+
+#storage-button-cold, #storage-button-freeze, #storage-button-warm {
+   
     width: 200px;
     height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
+
+#storage-button-freeze {
+    background-color: #396d7c;
+    color: white;
+}
+
+
+#storage-button-cold {
+    background-color: #ffcd74;
+    color: white;
+}
+
+#storage-button-warm {
+    background-color: #ff7251;
+    color: white;
+}
+
 #snowflake {
     color: white;
     font-size: xx-large;
 }
+

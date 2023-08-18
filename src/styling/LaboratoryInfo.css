@@ -1,6 +1,7 @@
 .laboratory-container {
     height: auto;
     
+    
 }
 
 #laboratory-header {
@@ -14,6 +15,8 @@
 
 .laboratory-dropdown {
     height: auto;
+    overflow-y: auto;
+    max-height: 500px;
     
 }
 

@@ -9,7 +9,7 @@
 .SearchBar-container {
   min-height: 5rem;
   height: auto;
-  width: 100%;
+  width: 100vw;
   background-color: #353839;
   display: flex;
   justify-content: center;
@@ -29,9 +29,8 @@
 
 .mainbody-container {
   
-  height: 130vh;
-  display: flex;
-  flex-direction: column;
+  height: auto;
+  
 }
 
 
@@ -47,6 +46,7 @@
 .basicInfo-container {
   display: flex;
   flex-direction: row;
+  height: 65vh;
 }
 
 .basicTest {
@@ -64,6 +64,7 @@
 .staffInfo-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
 .collector-info, .laboratory-info {
@@ -71,6 +72,21 @@
   height: auto;
 }
 
+#footer-container {
+  height: 25vh;
+  width: 100vw;
+  background-color: #353839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-txt {
+  color: white;
+  font-family: 'Oxygen', sans-serif;  
+  font-size: 2rem;
+
+}
 
 
 

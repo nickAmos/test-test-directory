@@ -1,13 +1,13 @@
 import '../styling/Testname.css';
-
+import Storage from './Storage';
 import 'semantic-ui-css/semantic.min.css';
-import {Button, Icon} from 'semantic-ui-react';
 
 
-export default function Testname({testName, storage, addStorage, transport, addTransport, labNotes}) {
 
-    let testString = `${storage} ${addStorage} ${transport} ${labNotes}`
+export default function Testname({testName, storage, addStorage, transport, addTransport, labNotes, laboratory}) {
 
+   
+console.log(laboratory);
     //set state of button text and image based on if 
     //'freeze'/ 'frozen' is container in tesstring.
     
@@ -16,18 +16,9 @@ export default function Testname({testName, storage, addStorage, transport, addT
         <>
         <div className='testName-container'>
             <h1 id='testName'>{testName}</h1>   
-            <div id='storage-logo'>
-                <Button id='storage-button' animated='vertical'>
-                    <Button.Content hidden>
-                    <Icon link name='snowflake' id='snowflake' />
-                    </Button.Content>        
-
-                    <Button.Content visible>
-                        Store Frozen (-20)
-                    </Button.Content>
-                </Button>
+            <Storage storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes} laboratory={laboratory}/>
             </div> 
-        </div>
+        
         </>
     )
 }

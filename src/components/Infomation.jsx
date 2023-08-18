@@ -128,7 +128,7 @@ useEffect(() => {
 
 }, [testInfo]);
 
-
+const footer = `<footer section>`;
 
 if (altNames) {
     if (altNames.length >= 15) {
@@ -148,7 +148,7 @@ if (altNames) {
 
         <Reveal posX={-200} delay={0.25} testName={testName} refresh={true}>
             <div className='Testname-container'>
-                <Testname testName={testName} storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes} />
+                <Testname testName={testName} storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes} laboratory={laboratory} />
             </div>
         </Reveal>
 
@@ -159,7 +159,7 @@ if (altNames) {
                 
                 <Reveal posX={200} delay={0.5} testName={testName} refresh={true}>
                     <div className='basicTest'>
-                        <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} laboratory={laboratory} altNames={altNames} />
+                        <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} altNames={altNames} laboratory={laboratory}  />
                     </div>
                 </Reveal>
                 <Reveal posY={200} delay={0.75} testName={testName} refresh={true}>
@@ -183,6 +183,14 @@ if (altNames) {
             </div>  
 
         </div>
+
+        <footer>
+            <Reveal posY={100} delay={0.75}>
+                <div id='footer-container'>
+                    <p id='footer-txt'>{footer}</p>
+                </div>
+            </Reveal>
+        </footer>
         </div>
     )
 

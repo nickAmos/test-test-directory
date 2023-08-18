@@ -33,14 +33,14 @@ export default function Header() {
             </div>
 
             <div id='right-box'>
-            <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/assets/documents/tube-guide-v2-final.pdf?20230526'>
+            <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/test-directory'>
             <Button animated='vertical'>
                 <Button.Content hidden>
-                  <Icon link name='file' />
+                  <Icon link name='sign-in alternate' />
                 </Button.Content>        
 
                 <Button.Content visible>
-                    Order of Draw
+                    Old Test Directory
                 </Button.Content>
             </Button>
             </a>
