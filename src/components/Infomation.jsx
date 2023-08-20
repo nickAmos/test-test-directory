@@ -8,6 +8,7 @@ import LaboratoryInfo from './LaboratoryInfo';
 import Testname from './Testname';
 import Container from './Container';
 import Reveal from './Reveal';
+import Footer from './Footer';
 
 
 
@@ -197,7 +198,9 @@ if (altNames) {
         <footer>
             <Reveal posY={100} delay={0.75}>
                 <div id='footer-container'>
-                    <p id='footer-txt'>{footer}</p>
+                    <Footer>
+                        
+                    </Footer>
                 </div>
             </Reveal>
         </footer>

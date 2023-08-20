@@ -1,0 +1,14 @@
+.footer-flex{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.flex-child {
+    height: 50%;
+    width: 20%;
+    background-color: white;
+}
