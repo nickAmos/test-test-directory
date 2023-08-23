@@ -36,7 +36,7 @@ export default function Header() {
 
             <div id='right-box'>
             <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/test-directory'>
-            <Button animated='vertical' id='old-path'>
+            <Button animated='vertical' id='vert-button'>
                 <Button.Content hidden>
                   <Icon link name='sign-in alternate' />
                 </Button.Content>        

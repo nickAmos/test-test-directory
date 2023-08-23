@@ -10,9 +10,11 @@
     padding-left: 115px;
     font-family: 'Oxygen', sans-serif;  
     font-size: 1.8rem;
+    font-weight: bolder;
 }
 
 .text-container #variable {
     font-family: 'Oxygen', sans-serif;
     font-size: 1.5rem;
+    color: rgb(45, 45, 45);
 }

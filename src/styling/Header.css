@@ -46,7 +46,15 @@
     padding-right: 10px;
 }
 
-#old-path {
+#vert-button {
     background-color: white;
     color: black;
+    min-width: 12.5rem;
+    font-size: large;
+    font-family: 'Oxanium'; 
 }
+
+#vert-button:hover {
+    background-color: #C5FAD5;
+    cursor: pointer;
+ }

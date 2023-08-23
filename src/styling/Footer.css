@@ -10,5 +10,9 @@
 .flex-child {
     height: 50%;
     width: 20%;
-    background-color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
