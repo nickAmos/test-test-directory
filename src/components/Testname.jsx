@@ -4,10 +4,10 @@ import 'semantic-ui-css/semantic.min.css';
 
 
 
-export default function Testname({testName, storage, addStorage, transport, addTransport, labNotes, laboratory}) {
+export default function Testname({testName, storage, addStorage, transport, addTransport, labNotes, laboratory, collectionInstruct, addCollectInstruct}) {
 
    
-console.log(laboratory);
+
     //set state of button text and image based on if 
     //'freeze'/ 'frozen' is container in tesstring.
     
@@ -16,7 +16,15 @@ console.log(laboratory);
         <>
         <div className='testName-container'>
             <h1 id='testName'>{testName}</h1>   
-            <Storage storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes} laboratory={laboratory}/>
+            <Storage 
+                storage={storage} 
+                addStorage={addStorage} 
+                transport={transport} 
+                addTransport={addTransport} 
+                labNotes={labNotes} 
+                laboratory={laboratory}
+                collectionInstruct={collectionInstruct}
+                addCollectInstruct={addCollectInstruct}/>
             </div> 
         
         </>

@@ -28,7 +28,7 @@
     margin: 0;
 }
 
-#storage-button-cold, #storage-button-freeze, #storage-button-warm {
+#storage-button-cold, #storage-button-freeze, #storage-button-warm, #collect-on-ice, #frozen-aliquot {
    
     width: 200px;
     height: 40px;
@@ -53,6 +53,16 @@
 
 #storage-button-warm {
     background-color: #ff7251;
+    color: white;
+}
+
+#collect-on-ice {
+    background-color: #3acbf4;
+    color: white;
+}
+
+#frozen-aliquot {
+    background-color: #158bab;
     color: white;
 }
 

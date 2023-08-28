@@ -4,7 +4,7 @@ export default function LaboratoryInfo({storage, addStorage, transport, addTrans
 
     
     if (storage || addStorage || transport || addTransport || labNotes) {
-        console.log('true');
+        
         return(
             <>
             <div className='laboratory-container'>

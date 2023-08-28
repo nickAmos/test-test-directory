@@ -159,7 +159,7 @@ if (altNames) {
 
         <Reveal posX={-200} delay={0.25} testName={testName} refresh={true}>
             <div className='Testname-container'>
-                <Testname testName={testName} storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes} laboratory={laboratory} />
+                <Testname testName={testName} storage={storage} addStorage={addStorage} transport={transport} addTransport={addTransport} labNotes={labNotes} laboratory={laboratory} collectionInstruct={collectionInstruct} addCollectInstruct={addCollectInstruct}/>
             </div>
         </Reveal>
 

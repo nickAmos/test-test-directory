@@ -2,7 +2,7 @@
 import '../styling/Footer.css';
 import 'semantic-ui-css/semantic.min.css';
 import '../styling/Header.css';
-import {Button, Icon, Reveal} from 'semantic-ui-react';
+import {Button, Icon} from 'semantic-ui-react';
 
 
 
