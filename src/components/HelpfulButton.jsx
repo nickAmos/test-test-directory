@@ -7,7 +7,7 @@ export default function HelpfulButton({title, icon, backgroundColor}) {
 
     return (
         <div id='storage-logo'>
-                <Button id='frozen-aliquot' animated='vertical'
+                <Button id='helpfulButton' animated='vertical'
                 style={{backgroundColor: backgroundColor}}>
                     <Button.Content hidden>
                     <Icon link name={icon} id='snowflake' />

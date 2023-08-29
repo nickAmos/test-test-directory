@@ -15354,11 +15354,3 @@ for (let i = 0; i<arrayTestName.length; i++) {
         }, */
 
 
-
-       let obj = 
-       {'Serum tube (gold cap OR red cap w. yellow insert)' : 580,
-       'EDTA' : 320,
-       'citrate' : 100,
-       '1x lithium heparin 1 x edta': 20,
-       'sterile pot': 300
-    }

@@ -2,8 +2,7 @@
 import './styling/App.css'
 
 import Infomation from './components/Infomation'
-import SearchBar from './components/SearchBar'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { arrayTestInfo } from './components/jsontests'
 import { arrayTestName } from './components/jsontests'
 
@@ -13,13 +12,9 @@ import { arrayTestName } from './components/jsontests'
 function App() {
 
 
-  const [testName, setTestName] = useState(arrayTestName[0]);
-  const [testInfo, setTestInfo] = useState(arrayTestInfo[0]);
-  
+  const [testName, setTestName] = useState(arrayTestName[165]);
+  const [testInfo, setTestInfo] = useState(arrayTestInfo[165]);
 
-
-
-  //add states for all pieces of info we want to display. 
 
 let collapse = '';
 
@@ -32,8 +27,6 @@ function handleClick(newTest) {
 
   return (
     <>
-    
-
      {testInfo ? <Infomation  testName={testName} testInfo={testInfo} collapse={collapse} handleClick={handleClick}/> : null } 
     </>
   )

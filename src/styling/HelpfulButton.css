@@ -1,6 +1,5 @@
 #storage-logo {
     border-radius: 10%;
-    margin-right: 200px;
    
 }
 
@@ -11,8 +10,7 @@
     margin: 0;
 }
 
-#storage-button-cold, #storage-button-freeze, #storage-button-warm, #collect-on-ice, #frozen-aliquot {
-   
+#helpfulButton {
     width: 200px;
     height: 40px;
     margin: 0;
@@ -20,34 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+   color: black;
 }
 
-#storage-button-freeze {
-    background-color: #396d7c;
-    color: white;
-}
-
-
-#storage-button-cold {
-    background-color: #ffcd74;
-    color: white;
-}
-
-#storage-button-warm {
-    background-color: #ff7251;
-    color: white;
-}
-
-#collect-on-ice {
-    background-color: #3acbf4;
-    color: white;
-}
-
-#frozen-aliquot {
-    background-color: #158bab;
-    color: white;
-}
 
 #snowflake {
     color: white;

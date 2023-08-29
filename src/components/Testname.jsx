@@ -14,18 +14,22 @@ export default function Testname({testName, storage, addStorage, transport, addT
 
     return(
         <>
-        <div className='testName-container'>
-            <h1 id='testName'>{testName}</h1>   
-            <Storage 
-                storage={storage} 
-                addStorage={addStorage} 
-                transport={transport} 
-                addTransport={addTransport} 
-                labNotes={labNotes} 
-                laboratory={laboratory}
-                collectionInstruct={collectionInstruct}
-                addCollectInstruct={addCollectInstruct}
-                testName={testName}/>
+        <div className='nameandbutton-container'>
+            <div id='testName-container'>
+            <h1 id='testName'>{testName}</h1> 
+            </div>  
+            <div id='button-container'>
+                <Storage 
+                    storage={storage} 
+                    addStorage={addStorage} 
+                    transport={transport} 
+                    addTransport={addTransport} 
+                    labNotes={labNotes} 
+                    laboratory={laboratory}
+                    collectionInstruct={collectionInstruct}
+                    addCollectInstruct={addCollectInstruct}
+                    testName={testName}/>
+            </div>
             </div> 
         
         </>

@@ -35,7 +35,33 @@ export default function Header() {
             </div>
 
             <div id='right-box'>
-            <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/test-directory'>
+            <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/department-directory'>
+                <Reveal animated='move'>
+                    <Reveal.Content visible>
+                        <div id='contact-path'>
+                   
+                        Old Test Directory
+                        </div>
+                    </Reveal.Content>
+                    <Reveal.Content hidden>
+                        <div id='contact-path'>
+                        why???
+                        </div>
+                        
+                    </Reveal.Content>
+                </Reveal>
+                </a>
+      
+            </div>
+        </header>
+       
+    )
+}
+
+
+
+/*  (Old) austin test directory button
+<a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/test-directory'>
             <Button animated='vertical' id='vert-button'>
                 <Button.Content hidden>
                   <Icon link name='sign-in alternate' />
@@ -45,11 +71,4 @@ export default function Header() {
                     Old Test Directory
                 </Button.Content>
             </Button>
-            </a>
-      
-            </div>
-        </header>
-       
-    )
-}
-
+            </a> */

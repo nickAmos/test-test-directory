@@ -23,27 +23,38 @@
     justify-content: center;
 }
 
+#left-box, #right-box  {
+    padding-top: 0px;
+}
+
 
 #middle-box h1 {
     font-family: 'Oxanium', cursive;
 }
 
-
 #contact-path {
     background-color: #2BAE66;
+    padding-top: 45px;
     display: flex;
     justify-content: center;
     align-items: center ;
     height: 5rem;
-    width: auto;
+    width: 100%;
     color: white;
     font-family: 'Oxanium', cursive; 
     font-size: larger;
     cursor: pointer;
+    border-bottom: solid white;
+}
+
+#contact-path h2 {
+    font-size: 1rem;
+    font-family: 'Oxanium', cursive; 
 }
 
 #phone-icon {
     padding-right: 10px;
+    font-size: 1rem;
 }
 
 #vert-button {

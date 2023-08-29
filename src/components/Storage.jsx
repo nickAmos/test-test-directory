@@ -1,6 +1,7 @@
 import '../styling/Testname.css';
 import 'semantic-ui-css/semantic.min.css';
 import HelpfulButton from './HelpfulButton';
+import '../styling/Storage.css';
 
 
 export default function Storage({storage, addStorage, transport, addTransport, labNotes, addCollectInstruct, collectionInstruct, testName, laboratory}) {
@@ -28,7 +29,13 @@ export default function Storage({storage, addStorage, transport, addTransport, l
 
     if (storageString.includes('aliquot and freeze')
         || 
-        storageString.includes('store serum frozen') ) {
+        storageString.includes('store serum frozen')
+        ||
+        storageString.includes('aliquotted and then frozen')
+        ||
+        storageString.includes('foil and frozen')
+        ||
+        storageString.includes('aliquotted as soon') ) {
        aliquotFreeze = true;
     } else {
         aliquotFreeze = false;
@@ -75,14 +82,14 @@ export default function Storage({storage, addStorage, transport, addTransport, l
     
 
     return(
-        <>
-        {storeFrozen ? <HelpfulButton title={"Store Frozen"} icon={"snowflake outline"} backgroundColor={"blue"}/> : null}
-        {storeFridge ? <HelpfulButton title={"Store at 4 degrees"} icon={"snowflake outline"} backgroundColor={"blue"}/> : null}
-        {storeRoomT ? <HelpfulButton title={"Store at room temp"} icon={"snowflake outline"} backgroundColor={"blue"}/> : null}
-        {centrifugeNo ? <HelpfulButton title={"Do not centrifuge"} icon={"snowflake outline"} backgroundColor={"red"}/> : null}
-        {collectOnIce ? <HelpfulButton title={"Collect on ice"} icon={"snowflake outline"} backgroundColor={"red"}/> : null}
-        {aliquotFreeze ? <HelpfulButton title={"Aliquot and freeze"} icon={"snowflake outline"} backgroundColor={"red"}/> : null}
-        </>
+        <div className='helpful-button-container'>
+        {storeFrozen ? <HelpfulButton title={"Store Frozen"} icon={"snowflake outline"} backgroundColor={"#b0e0e6"}/> : null}
+        {storeFridge ? <HelpfulButton title={"Store at 4 degrees"} icon={"snowflake outline"} backgroundColor={"#b4eeb4"}/> : null}
+        {storeRoomT ? <HelpfulButton title={"Store at room temp"} icon={"snowflake outline"} backgroundColor={"#ffdab9"}/> : null}
+        {centrifugeNo ? <HelpfulButton title={"Do not centrifuge"} icon={"snowflake outline"} backgroundColor={"#ff7373"}/> : null}
+        {collectOnIce ? <HelpfulButton title={"Collect on ice"} icon={"snowflake outline"} backgroundColor={"#c6e2ff"}/> : null}
+        {aliquotFreeze ? <HelpfulButton title={"Aliquot and freeze"} icon={"snowflake outline"} backgroundColor={"#dc61bd"}/> : null}
+        </div>
     )
 
 
