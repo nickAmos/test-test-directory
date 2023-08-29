@@ -1,112 +1,91 @@
 import '../styling/Testname.css';
 import 'semantic-ui-css/semantic.min.css';
-import {Button, Icon} from 'semantic-ui-react';
+import HelpfulButton from './HelpfulButton';
 
 
-export default function Storage({storage, addStorage, transport, addTransport, labNotes, addCollectInstruct, collectionInstruct}) {
+export default function Storage({storage, addStorage, transport, addTransport, labNotes, addCollectInstruct, collectionInstruct, testName, laboratory}) {
 
     let storageString = (`${storage} ${addStorage} ${transport} ${labNotes} ${addTransport}`).toLocaleLowerCase();
+    let transportString = (`${addCollectInstruct} ${collectionInstruct} ${testName}`).toLocaleLowerCase();
+    let centrifugeString = (`${labNotes} ${addTransport} ${collectionInstruct} ${addCollectInstruct} ${storage} ${addStorage}`).toLocaleLowerCase();
+    let collectOnIce = false;
+    let aliquotFreeze = false;
+    let storeFrozen = false;
+    let storeFridge = false;
+    let storeRoomT = false;
+    let centrifugeNo = false;
 
+    if (transportString.includes('place tube on ice') 
+        || 
+        transportString.includes('collect on ice')
+        ||
+        transportString.includes('laboratory on ice')) {
+            collectOnIce = true; 
+        } else {
+            collectOnIce = false;
+           };
+    
 
-
-
-    if (collectionInstruct || addCollectInstruct) {
-        let transportString = (`${addCollectInstruct} ${collectionInstruct}`).toLowerCase();
-        if (transportString.includes('place tube on ice') 
-            || 
-            transportString.includes('collect on ice')
-            ||
-            transportString.includes('laboratory on ice')) {
-            return (
-                <div id='storage-logo'>
-                        <Button id='collect-on-ice' animated='vertical'>
-                            <Button.Content hidden>
-                            <Icon link name='snowflake' id='snowflake' />
-                            </Button.Content>        
-                            <Button.Content visible id='store-text'>
-                                Collect on ice
-                            </Button.Content>
-                        </Button>
-                        </div>
-            )
-           }
-    }
-
-    if (storageString.includes('aliquot and freeze')) {
-        return (
-            <div id='storage-logo'>
-                <Button id='frozen-aliquot' animated='vertical'>
-                    <Button.Content hidden>
-                    <Icon link name='tint' id='snowflake' />
-                    </Button.Content>        
-                
-                    <Button.Content visible id='store-text'>
-                        Aliquot and freeze
-                    </Button.Content>
-                </Button>
-                </div>
-        )
+    if (storageString.includes('aliquot and freeze')
+        || 
+        storageString.includes('store serum frozen') ) {
+       aliquotFreeze = true;
+    } else {
+        aliquotFreeze = false;
     }
 
 
+    if (laboratory === 'Referred Test') {
 
-
-        
         if (storageString.includes('store serum frozen') 
             || 
-            storageString.includes('store frozen')
-            || 
-            storageString.includes('aliquot and freeze')) {
-            return (
-                <div id='storage-logo'>
-                <Button id='storage-button-freeze' animated='vertical'>
-                    <Button.Content hidden>
-                    <Icon link name='snowflake' id='snowflake' />
-                    </Button.Content>        
-                
-                    <Button.Content visible id='store-text'>
-                        Store Frozen (-20°C)
-                    </Button.Content>
-                </Button>
-                </div>
-                )
-            
+            storageString.includes('store frozen')) {
+            storeFrozen = true;
+        } else {
+            storeFrozen = false;
         }
 
         if (storageString.includes('at 4')) {
-            return (
-                <div id='storage-logo'>
-                <Button id='storage-button-cold' animated='vertical'>
-                    <Button.Content hidden>
-                    <Icon link name='thermometer quarter' id='snowflake' />
-                    </Button.Content>        
-                
-                    <Button.Content visible id='store-text'>
-                        Store at 4°C
-                    </Button.Content>
-                </Button>
-                </div>
-            )
+            storeFridge = true;
+        } else {
+            storeFridge = false;
         }
 
         if (storageString.includes('specimen at room temperature')) {
-            return (
-                <div id='storage-logo'>
-                <Button id='storage-button-warm' animated='vertical'>
-                    <Button.Content hidden>
-                    <Icon link name='sun' id='snowflake' />
-                    </Button.Content>        
-                
-                    <Button.Content visible id='store-text'>
-                        Store at room temperature
-                    </Button.Content>
-                </Button>
-                </div>
-            )
+            storeRoomT = true;
+        } else {
+            storeRoomT = false;
         }
- }
+    }
 
 
- /* seperate each type of block into its own component so that multiple 
- buttons can be displayed for one test, additionally create a certrifuge / 
- No centrifuge button*/
+
+    if (centrifugeString.includes('do not seperate') 
+        ||
+        centrifugeString.includes('do not centrifuge')
+        ||
+        centrifugeString.includes('must not be centrifuged')
+        || 
+        centrifugeString.includes('do not spin')) {
+            centrifugeNo = true;
+     } else {
+            centrifugeNo = false;
+     }
+
+    
+
+    return(
+        <>
+        {storeFrozen ? <HelpfulButton title={"Store Frozen"} icon={"snowflake outline"} backgroundColor={"blue"}/> : null}
+        {storeFridge ? <HelpfulButton title={"Store at 4 degrees"} icon={"snowflake outline"} backgroundColor={"blue"}/> : null}
+        {storeRoomT ? <HelpfulButton title={"Store at room temp"} icon={"snowflake outline"} backgroundColor={"blue"}/> : null}
+        {centrifugeNo ? <HelpfulButton title={"Do not centrifuge"} icon={"snowflake outline"} backgroundColor={"red"}/> : null}
+        {collectOnIce ? <HelpfulButton title={"Collect on ice"} icon={"snowflake outline"} backgroundColor={"red"}/> : null}
+        {aliquotFreeze ? <HelpfulButton title={"Aliquot and freeze"} icon={"snowflake outline"} backgroundColor={"red"}/> : null}
+        </>
+    )
+
+
+}
+
+

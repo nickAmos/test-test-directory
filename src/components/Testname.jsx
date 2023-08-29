@@ -24,7 +24,8 @@ export default function Testname({testName, storage, addStorage, transport, addT
                 labNotes={labNotes} 
                 laboratory={laboratory}
                 collectionInstruct={collectionInstruct}
-                addCollectInstruct={addCollectInstruct}/>
+                addCollectInstruct={addCollectInstruct}
+                testName={testName}/>
             </div> 
         
         </>
