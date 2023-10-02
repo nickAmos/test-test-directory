@@ -6,15 +6,7 @@
     
   }
   
-.SearchBar-container {
-  min-height: 5rem;
-  height: auto;
-  width: 100vw;
-  background-color: #2BAE66;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .Testname-container {
   width: 100%;
@@ -42,6 +34,7 @@
 
 .staffInfo-container {
   height: auto;
+  
 }
 
 .basicInfo-container {
@@ -66,23 +59,74 @@
 .staffInfo-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
   justify-content: center;
+  align-items: center;
   height: auto;
+  background-color: #ffffff;
+  margin-bottom: 4rem;
+}
+
+.SearchBar-container {
+  min-height: 5rem;
+  height: auto;
+  width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .collector-info, .laboratory-info {
   flex: 0 0 50%;
   height: auto;
+  margin: 25px;
+  background-color: white;
+  border-bottom: 4px solid #3b815a;
+  border-left: 2px solid #3b815a;
+  border-right: 4px solid #3b815a;
+  border-top: 2px solid #3b815a;
+  border-radius: 15px;
+}
+
+.collector-info:empty, .laboratory-info:empty {
+  border: 0px;
 }
 
 #footer-container {
-  height: 25vh;
+  height: 20vh;
   width: 100vw;
-  background-color: #bebebe;
+  background-color: #3b815a;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#Extra-contact-info {
+  height: 35vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.821);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#extra-contact-flex {
+  display: flex;
+  height: 80%;
+  width: 80%;
+ 
+  justify-content: center;
+  align-items: center;
+}
+
+#boxOne, #boxTwo {
+  width: 50%;
+  height: 100%;
+  color: white;  
+}
+
+#boxTwo{
+  text-align: right;
 }
 
 

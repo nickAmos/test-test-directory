@@ -202,7 +202,30 @@ if (altNames) {
                         
                     </Footer>
                 </div>
+
+                <div id='Extra-contact-info'>
+                    <div id='extra-contact-flex'>
+                        <div id='boxOne'>
+                            <p>This section is placeholder for--</p>
+                            <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                        </div>
+                        <div id='boxTwo'>
+                        <p>-- more contacts and links</p>
+                        <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                            <p>@@AustinPath</p>
+                        </div>
+                    </div>
+
+                </div>
             </Reveal>
+
         </footer>
         </div>
     )

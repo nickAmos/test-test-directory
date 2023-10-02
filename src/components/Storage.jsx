@@ -84,11 +84,11 @@ export default function Storage({storage, addStorage, transport, addTransport, l
     return(
         <div className='helpful-button-container'>
         {storeFrozen ? <HelpfulButton title={"Store Frozen"} icon={"snowflake outline"} backgroundColor={"#b0e0e6"}/> : null}
-        {storeFridge ? <HelpfulButton title={"Store at 4 degrees"} icon={"snowflake outline"} backgroundColor={"#b4eeb4"}/> : null}
-        {storeRoomT ? <HelpfulButton title={"Store at room temp"} icon={"snowflake outline"} backgroundColor={"#ffdab9"}/> : null}
-        {centrifugeNo ? <HelpfulButton title={"Do not centrifuge"} icon={"snowflake outline"} backgroundColor={"#ff7373"}/> : null}
-        {collectOnIce ? <HelpfulButton title={"Collect on ice"} icon={"snowflake outline"} backgroundColor={"#c6e2ff"}/> : null}
-        {aliquotFreeze ? <HelpfulButton title={"Aliquot and freeze"} icon={"snowflake outline"} backgroundColor={"#dc61bd"}/> : null}
+        {storeFridge ? <HelpfulButton title={"Store at 4 degrees"} icon={"thermometer half icon"} backgroundColor={"#b4eeb4"}/> : null}
+        {storeRoomT ? <HelpfulButton title={"Store at room temp"} icon={"sun"} backgroundColor={"#ffdab9"}/> : null}
+        {centrifugeNo ? <HelpfulButton title={"Do not centrifuge"} icon={"stop circle outline"} backgroundColor={"#ff7373"}/> : null}
+        {collectOnIce ? <HelpfulButton title={"Collect on ice"} icon={"cubes"} backgroundColor={"#c6e2ff"}/> : null}
+        {aliquotFreeze ? <HelpfulButton title={"Aliquot and freeze"} icon={"snowflake"} backgroundColor={"#dc61bd"}/> : null}
         </div>
     )
 

@@ -19,6 +19,8 @@ const selectedTest = (item) => {
     handleClick(newTest);
     setInput('');
 }
+
+
     return (
         
         <div className='search-container'>
@@ -33,7 +35,8 @@ const selectedTest = (item) => {
                     })
                     
                     .map((item) => (
-                        <div className='test-result' key={item} onClick={() => selectedTest(item)}>{item}</div>
+                        <div className='test-result' key={item} onClick={() => {selectedTest(item)
+                        console.log(item)}}>{item}</div>
                     ))}
             </div>
         </div>

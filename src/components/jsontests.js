@@ -15318,7 +15318,7 @@ for (let i = 0; i<arrayTestName.length; i++) {
     if (arrayTestInfo[i]['Alternate Names']) {
         altNames = arrayTestInfo[i]['Alternate Names'];
     }
-    stringToPush = `${testCode} | ${arrayTestName[i]} | ${altNames}`
+    stringToPush = `${testCode} | ${arrayTestName[i]} | ${altNames} `
     SearchableArray.push(stringToPush);
 }
 

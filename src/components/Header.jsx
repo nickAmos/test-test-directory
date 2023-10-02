@@ -13,7 +13,7 @@ export default function Header() {
         <header id='main-header'>
             <div id='left-box'>
                 <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/department-directory'>
-                <Reveal animated='move'>
+                <Reveal animated='move up'>
                     <Reveal.Content visible>
                         <div id='contact-path'>
                         <span><Icon link name='phone square' id='phone-icon'/></span>
@@ -36,7 +36,7 @@ export default function Header() {
 
             <div id='right-box'>
             <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/department-directory'>
-                <Reveal animated='move'>
+                <Reveal animated='move up'>
                     <Reveal.Content visible>
                         <div id='contact-path'>
                    
@@ -45,7 +45,7 @@ export default function Header() {
                     </Reveal.Content>
                     <Reveal.Content hidden>
                         <div id='contact-path'>
-                        why???
+                            <Icon link name='share square outline' id='phone-icon'/>
                         </div>
                         
                     </Reveal.Content>
