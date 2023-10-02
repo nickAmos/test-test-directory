@@ -115,11 +115,9 @@ useEffect(() => {
         }
         else if (testInfo['Container'].includes('Faecal Pot')) {
             setSrc('src/images/fecal-pot.png');
+        } else {
+            setSrc('src/images/seeCollection.jpeg');
         }
-
-        
-        
-        else {setSrc(null)};
         
     } else {setContainer(null)};
 
