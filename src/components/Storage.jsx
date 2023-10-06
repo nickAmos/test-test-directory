@@ -15,12 +15,15 @@ export default function Storage({storage, addStorage, transport, addTransport, l
     let storeFridge = false;
     let storeRoomT = false;
     let centrifugeNo = false;
+    let wrapfoil = false;
 
     if (transportString.includes('place tube on ice') 
         || 
         transportString.includes('collect on ice')
         ||
-        transportString.includes('laboratory on ice')) {
+        transportString.includes('laboratory on ice')
+        ||
+        transportString.includes('pot on ice')) {
             collectOnIce = true; 
         } else {
             collectOnIce = false;
@@ -79,6 +82,11 @@ export default function Storage({storage, addStorage, transport, addTransport, l
             centrifugeNo = false;
      }
 
+     if (transportString.includes('wrap in foil')
+     ) {
+    wrapfoil = true;
+} 
+
     
 
     return(
@@ -89,6 +97,7 @@ export default function Storage({storage, addStorage, transport, addTransport, l
         {centrifugeNo ? <HelpfulButton title={"Do not centrifuge"} icon={"stop circle outline"} backgroundColor={"#ff7373"}/> : null}
         {collectOnIce ? <HelpfulButton title={"Collect on ice"} icon={"cubes"} backgroundColor={"#c6e2ff"}/> : null}
         {aliquotFreeze ? <HelpfulButton title={"Aliquot and freeze"} icon={"snowflake"} backgroundColor={"#dc61bd"}/> : null}
+        {wrapfoil ? <HelpfulButton title={"Wrap in aluminium foil"} icon={"snowflake"} backgroundColor={"#dc61bd"}/> : null}
         </div>
     )
 
