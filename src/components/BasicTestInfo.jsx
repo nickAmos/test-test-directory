@@ -7,10 +7,10 @@ export default function BasicTestInfo({specimen, container, testcode, testInfo, 
 
     return (
         <div className='text-container'>
+            <DepartmentContact laboratory={laboratory}/>
             <p id='info'><b>Specimen type:</b> <span id='variable' >{specimen}</span></p>
             <p id='info'><b>Container:</b> <span id='variable'>{container}</span></p>
             <p id='info'><b>CSR Test code:</b> <span id='variable' >{testcode}</span></p>
-            <DepartmentContact laboratory={laboratory}/>
             {altNames ? <p id='info'><b>Alternate names:</b> <span id='variable'>{altNames}</span></p> : null }
         </div>
 

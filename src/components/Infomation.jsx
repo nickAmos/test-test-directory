@@ -109,15 +109,36 @@ useEffect(() => {
             setSrc('src/images/9mlEDTA.png');
         }
 //put swabs here to avoid swap to sterile pot 
+
+        else if (testInfo['Container'].includes('Fluoride')) {
+            setSrc('src/images/fluorideOxalate.jpeg');
+        } else if (testInfo['Container'].includes('24')) {
+            setSrc('src/images/24UC.jpeg');
+        } else if (testInfo['Container'].includes('CSF')) {
+            setSrc('src/images/CSFTUBEbad.png');
+        }
         
         else if (testInfo['Container'].includes('Sterile container') || testInfo['Container'].includes('Sterile Container') ) {
             setSrc('src/images/sterile-pot.png');
         }
         else if (testInfo['Container'].includes('Faecal Pot')) {
             setSrc('src/images/fecal-pot.png');
-        } else {
+
+        } else if (testInfo['Container'].includes('ACD')) {
+            setSrc('src/images/ACDtube.jpeg');
+        } else if (testInfo['Container'].includes('Plain')) {
+            setSrc('src/images/Plainredtop.webp');
+        }
+        
+        else {
             setSrc('src/images/seeCollection.jpeg');
         }
+
+        //swabs are done outside main if else to override sterile pot
+
+        if (testInfo['Container'].includes('Swab - Bacterial')) {
+            setSrc('src/images/bacterialSwab.jpeg');
+        } 
         
     } else {setContainer(null)};
 
