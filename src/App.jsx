@@ -1,6 +1,6 @@
 
 import './styling/App.css'
-
+import 'bootstrap/dist/css/bootstrap.css';
 import Infomation from './components/Infomation'
 import { useState } from 'react'
 import { arrayTestInfo } from './components/jsontests'

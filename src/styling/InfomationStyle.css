@@ -81,10 +81,10 @@
   height: auto;
   margin: 25px;
   background-color: white;
-  border-bottom: 4px solid #3b815a;
-  border-left: 2px solid #3b815a;
-  border-right: 4px solid #3b815a;
-  border-top: 2px solid #3b815a;
+  border-bottom: 4px solid #68c4af;
+  border-left: 2px solid #68c4af;
+  border-right: 4px solid #68c4af;
+  border-top: 2px solid #68c4af;
   border-radius: 15px;
 }
 
@@ -95,7 +95,7 @@
 #footer-container {
   height: 20vh;
   width: 100vw;
-  background-color: #3b815a;
+  background-color: #68c4af;
   display: flex;
   justify-content: center;
   align-items: center;

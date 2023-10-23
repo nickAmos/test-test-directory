@@ -27,6 +27,7 @@ const [minVol, setMinVol] = useState('');
 const [minVolPaed, setMinVolPaed] = useState('');
 const [notes, setNotes] = useState('');
 const [frequency, setFrequency] = useState('');
+const [orderingInfo, setOrderingInfo] = useState('');
 
 const [storage, setStorage] = useState('');
 const [transport, setTransport] = useState('');
@@ -41,8 +42,14 @@ const [src, setSrc] = useState(null);
 
 useEffect(() => {
     if (testInfo["Laboratory"]) {
+        console.log(testInfo['Laboratory']);
         setLaboratory(testInfo["Laboratory"]);
     } else {setLaboratory(null)};
+
+    if (testInfo["Ordering Information"]) {
+        console.log(testInfo['Ordering Information'])
+        setOrderingInfo(testInfo["Ordering Information"]);
+    } else {setOrderingInfo(null)};
 
     if (testInfo['Additional Collection Instructions']) {
         setAddCollectInstruct(testInfo['Additional Collection Instructions']);
@@ -202,7 +209,7 @@ if (altNames) {
             <div className='staffInfo-container'>
                 <Reveal posX={-100} delay={0.5}>
                 <div className='collector-info'>
-                    <CollectorInfo collectionInstruct={collectionInstruct} addCollectInstruct={addCollectInstruct} notes={notes} minVol={minVol} minVolPaed={minVolPaed} frequency={frequency} />
+                    <CollectorInfo collectionInstruct={collectionInstruct} addCollectInstruct={addCollectInstruct} notes={notes} minVol={minVol} minVolPaed={minVolPaed} frequency={frequency} orderingInfo={orderingInfo} />
                 </div>
                 </Reveal>
                 <Reveal posX={100} delay={0.6}>

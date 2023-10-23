@@ -6,7 +6,7 @@ import '../styling/Storage.css';
 
 export default function Storage({storage, addStorage, transport, addTransport, labNotes, addCollectInstruct, collectionInstruct, testName, laboratory}) {
 
-    let storageString = (`${storage} ${addStorage} ${transport} ${labNotes} ${addTransport}`).toLocaleLowerCase();
+    let storageString = (`${storage} ${addStorage} ${transport} ${addTransport}`).toLocaleLowerCase();
     let transportString = (`${addCollectInstruct} ${collectionInstruct} ${testName}`).toLocaleLowerCase();
     let centrifugeString = (`${labNotes} ${addTransport} ${collectionInstruct} ${addCollectInstruct} ${storage} ${addStorage}`).toLocaleLowerCase();
     let collectOnIce = false;
@@ -23,7 +23,8 @@ export default function Storage({storage, addStorage, transport, addTransport, l
         ||
         transportString.includes('laboratory on ice')
         ||
-        transportString.includes('pot on ice')) {
+        transportString.includes('pot on ice')
+        ) {
             collectOnIce = true; 
         } else {
             collectOnIce = false;

@@ -1,0 +1,433 @@
+Results: 
+
+Additional Collection instructions and additional Storage do not have many shared results. 
+
+
+  Specimen types
+
+  0
+: 
+"Blood: 639"
+1
+: 
+"Faeces: 22"
+2
+: 
+"Contact the Microbiology laboratory: 3"
+3
+: 
+"Blood Eye swab Faeces Spot Urine Tissue: 1"
+4
+: 
+"Spot Urine: 13"
+5
+: 
+"24 hr Urine: 19"
+6
+: 
+"CSF: 20"
+7
+: 
+"Random Urine: 6"
+8
+: 
+"Saliva Swab Blood: 2"
+9
+: 
+"Test not available: 55"
+10
+: 
+"Urine: 47"
+11
+: 
+"Hair: 5"
+12
+: 
+"CSF Bronchial washings Bronchial lavage Blood: 1"
+13
+: 
+"Aspirate: 5"
+14
+: 
+"Bone Marrow Blood: 1"
+15
+: 
+"See collection instructions: 48"
+16
+: 
+"Tissue: 19"
+17
+: 
+"Fluid Sputum Throat swab Respiratory specimen Bronchial washings Bronchial lavage NPA (Naso pharyngeal aspirate) Nasopharyngeal swab Expectorated sputum: 3"
+18
+: 
+"Bronchial lavage Bronchial washings: 1"
+19
+: 
+"Respiratory specimen: 1"
+20
+: 
+"Fluid: 17"
+21
+: 
+"CSF See collection instructions: 1"
+22
+: 
+"Sputum Respiratory specimen Bronchial washings Bronchial lavage NPA (Naso pharyngeal aspirate) Nasopharyngeal swab: 6"
+23
+: 
+"Urine Genital specimens First morning voided urine: 2"
+24
+: 
+"Liver tissue: 2"
+25
+: 
+"Cord Blood: 1"
+26
+: 
+"See collection instructions CSF Blood: 1"
+27
+: 
+"Throat swab Nasopharyngeal swab: 1"
+28
+: 
+"Swab Fluid Aspirated pus: 1"
+29
+: 
+"Faeces Swab Blood: 1"
+30
+: 
+"CSF Blood: 4"
+31
+: 
+"Body Fluid CSF Tissue See collection instructions Bone Marrow Lymph Node Blood: 1"
+32
+: 
+"Synovial Fluid: 1"
+33
+: 
+"Scrapings: 2"
+34
+: 
+"See collection instructions Swab: 1"
+35
+: 
+"Blood See collection instructions: 2"
+36
+: 
+"Mid stream Urine: 2"
+37
+: 
+"Fluid Tissue Bronchial washings Sputum Tracheal aspirate: 1"
+38
+: 
+"Urine CSF Sputum Throat swab Respiratory specimen Bronchial washings Bronchial lavage NPA (Naso pharyngeal aspirate) Nasopharyngeal swab Swab Blood: 1"
+39
+: 
+"Swab: 8"
+40
+: 
+"Muscle biopsy: 1"
+41
+: 
+"Fluid Tissue: 1"
+42
+: 
+"Expectorated sputum: 1"
+43
+: 
+"First morning voided urine: 1"
+44
+: 
+"Aspirate Swab Tissue Urine: 1"
+45
+: 
+"See collection instructions Swab Tissue: 1"
+46
+: 
+"Nerve biopsy: 1"
+47
+: 
+"Bronchial lavage Bronchial washings Respiratory specimen Sputum: 2"
+48
+: 
+"Fluid NPA (Naso pharyngeal aspirate) Nasopharyngeal swab Expectorated sputum: 1"
+49
+: 
+"Spot Urine 24 hr Urine: 1"
+50
+: 
+"Sputum: 2"
+51
+: 
+"Blood Bone Marrow Tissue: 3"
+52
+: 
+"Throat swab Fluid: 1"
+53
+: 
+"CSF Fluid Tissue: 1"
+54
+: 
+"Tissue CSF: 1"
+55
+: 
+"Gastric biopsy: 1"
+56
+: 
+"Faeces Swab: 1"
+57
+: 
+"Wound swab: 3"
+58
+: 
+"Body Fluid Fluid CSF Sputum Bronchial washings Bronchial lavage Synovial Fluid: 1"
+59
+: 
+"Blood Tissue: 1"
+60
+: 
+"Blood Respiratory specimen CSF: 1"
+61
+: 
+"Genital specimens: 3"
+62
+: 
+"Blood CSF Fluid Tissue: 1"
+63
+: 
+"Body Fluid CSF Faeces Swab Tissue Urine: 1"
+64
+: 
+"Blood CSF: 5"
+65
+: 
+"Blood Bone Marrow: 12"
+66
+: 
+"CSF Tissue Swab: 1"
+67
+: 
+"Saliva Swab Swab: 1"
+68
+: 
+"Swab Mid stream early morning urine First morning voided urine: 1"
+69
+: 
+"Fluid Sputum Throat swab Bronchial washings Bronchial lavage NPA (Naso pharyngeal aspirate) Nasopharyngeal swab Swab Expectorated sputum: 1"
+70
+: 
+"Fluid Sputum Throat swab Respiratory specimen Bronchial washings Bronchial lavage NPA (Naso pharyngeal aspirate) Nasopharyngeal swab Swab Expectorated sputum: 2"
+71
+: 
+"Bone Marrow: 1"
+72
+: 
+"Bronchial lavage Bronchial washings Tissue: 1"
+73
+: 
+"Ascitic fluid Aspirate Aspirated pus Body Fluid Bronchial lavage Bronchial washings CSF Expectorated sputum Fluid Liver tissue Lymph Node Respiratory specimen Sputum Swab Synovial Fluid Tissue Tracheal aspirate Urine Wound swab: 1"
+74
+: 
+"Blood CSF Faeces Fluid Rectal swab Respiratory specimen Throat swab: 1"
+75
+: 
+"Body Fluid: 1"
+76
+: 
+"Swab Tissue: 1"
+77
+: 
+"Dry Swab Rectal swab Throat swab Eye swab Genital specimens Swab: 1"
+78
+: 
+"Dry Swab Eye swab Genital specimens Rectal swab Swab Throat swab: 1"
+79
+: 
+"Blood CSF Urine: 1"
+80
+: 
+"Eye swab: 1"
+81
+: 
+"Blood culture: 1"
+
+
+
+
+Laboratory:
+0
+: 
+"Biochemistry: 267"
+1
+: 
+"Referred Test: 472"
+2
+: 
+"Haematology: 58"
+3
+: 
+"Molecular Diagnostics - Genetics: 23"
+4
+: 
+"Microbiology: 60"
+5
+: 
+"Blood Bank: 21"
+6
+: 
+"Not Applicable: 66"
+7
+: 
+"Anatomical Pathology: 15"
+8
+: 
+"Molecular Diagnostics - Infectious: 35"
+9
+: 
+"Clinical Pharmacology: 9"
+10
+: 
+"Flow Cytometry: 3"
+11
+: 
+"Specimen Collection: 4"
+
+
+
+
+
+
+Storage:
+0
+: 
+"Store at 4°C: 300"
+1
+: 
+"Store serum at 4°C: 45"
+2
+: 
+"Aliquot and freeze as soon as possible: 57"
+3
+: 
+"Store frozen at -20°C: 42"
+4
+: 
+"Store specimen at room temperature: 64"
+5
+: 
+"Store 2 mL or more serum at 4°C: 5"
+6
+: 
+"Store serum frozen at - 20°C: 17"
+7
+: 
+"Store 1 mL or more serum frozen at - 20°C: 5"
+
+
+
+
+Transport: 
+0
+: 
+"Transport at 4°C: 290"
+1
+: 
+"Transport frozen: 115"
+2
+: 
+"Transport frozen on dry ice: 20"
+3
+: 
+"Transport on ice: 6"
+4
+: 
+"Transport at room temperature: 112"
+5
+: 
+"Transport separated and frozen at -20°C: 8"
+6
+: 
+"Transport frozen on dry ice Transport at room temperature: 1"
+
+
+
+Collection:
+
+0
+: 
+"Collect at room temperature: 248"
+1
+: 
+"Place tube on ice & send to laboratory immediately: 15"
+2
+: 
+"Send to the laboratory as soon as possible Record exact collection time and time of last dose: 1"
+3
+: 
+"Do not use isopropanol swabs before venepuncture: 2"
+4
+: 
+"Record exact collection time and time of last dose: 5"
+5
+: 
+"Collect on ice: 21"
+6
+: 
+"Protect from light - wrap in foil: 13"
+7
+: 
+"Send to the laboratory as soon as possible: 18"
+8
+: 
+"Send to the laboratory immediately: 14"
+9
+: 
+"Please note the time and date of the start and of the end of collection.: 17"
+10
+: 
+"Collect specimens at the same time: 2"
+11
+: 
+"Please note the time and date of the start and of the end of collection. Send to the laboratory as soon as possible: 1"
+12
+: 
+"Please note the time of last dose and dose amount: 2"
+13
+: 
+"Collect on ice Send to the laboratory as soon as possible: 2"
+14
+: 
+"Place sterile pot on ice in an esky and deliver directly to Anatomical Pathology: 1"
+15
+: 
+"Collect at room temperature Send to the laboratory as soon as possible: 1"
+16
+: 
+"Place tube on ice & send to laboratory immediately Please note the time of last dose and dose amount: 1"
+17
+: 
+"Send to the laboratory immediately Collect at room temperature Protect from light - wrap in foil: 1"
+18
+: 
+"Send to the laboratory immediately Please state fluid type: 1"
+19
+: 
+"Collect at room temperature Protect from light - wrap in foil: 1"
+*/ 
+
+
+things to add:
+
+Dedication regional/metropolitan instructions (laboratory Info) (done)
+
+Ordering infomation for collector (collector info) (done)
+
+fix 24 Urine storage instructions (done)
+
+use bootstrap to make responsive?
+
+Image becomes card with container as heading -> Img -> collection instructions
+**bootstrap??
+
+Styling to fit pascal theme

@@ -13,9 +13,9 @@
     height: 3.5rem;
     font-size: larger;
     font-family: 'Oxanium', cursive;
-    border: 2px solid #3b815a;
-    border-bottom: 4px solid #3b815a;
-    border-right: 4px solid #3b815a;
+    border: 2px solid #68c4af;
+    border-bottom: 4px solid #68c4af;
+    border-right: 4px solid #68c4af;
     border-radius: 5px;
 }
 
@@ -33,10 +33,10 @@ input:focus::placeholder {
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 30px 5px 5px 30px ;
-  border-bottom: 2px solid #3b815a;
-  border-left: 2px solid #3b815a;
-  border-right: 2px solid #3b815a;
-  border-top: 2px solid #3b815a;
+  border-bottom: 2px solid #68c4af;
+  border-left: 2px solid #68c4af;
+  border-right: 2px solid #68c4af;
+  border-top: 2px solid #68c4af;
   box-sizing: content-box;
   margin-bottom: 50px;
  }
