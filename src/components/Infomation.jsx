@@ -42,12 +42,10 @@ const [src, setSrc] = useState(null);
 
 useEffect(() => {
     if (testInfo["Laboratory"]) {
-        console.log(testInfo['Laboratory']);
         setLaboratory(testInfo["Laboratory"]);
     } else {setLaboratory(null)};
 
     if (testInfo["Ordering Information"]) {
-        console.log(testInfo['Ordering Information'])
         setOrderingInfo(testInfo["Ordering Information"]);
     } else {setOrderingInfo(null)};
 
@@ -201,7 +199,7 @@ if (altNames) {
                 </Reveal>
                 <Reveal posY={200} delay={0.75} testName={testName} refresh={true}>
                 <div className='container-img'>
-                    <Container src={src} />
+                    <Container src={src} container={container} collectionInstruct={collectionInstruct}/>
                 </div>
                 </Reveal>
             </div>  

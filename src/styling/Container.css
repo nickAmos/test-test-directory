@@ -1,16 +1,39 @@
 .image-container {
-    height: 100%;
-    width: 100%;
-    background-color: white;
+    width: 70%;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 100px;
+    border: solid black 1px;
 }
 
-.image-container img {
-    height: 300px;
-    aspect-ratio: auto;
+#boxbox {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
     
 }
 
+#imgimg img {
+    max-height: 250px;
+    align-self: center;
+}
+
+#imgimg {
+    align-self: center;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container h2 {
+    align-self: baseline;
+}
+
+#boxbox p {
+    padding-top: 10px;
+}
