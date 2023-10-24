@@ -425,9 +425,14 @@ Ordering infomation for collector (collector info) (done)
 
 fix 24 Urine storage instructions (done)
 
-use bootstrap to make responsive?
 
-Image becomes card with container as heading -> Img -> collection instructions
-**bootstrap??
+fix image display and change collection instructions. 
 
-Styling to fit pascal theme
+if additional collection instructions are > than X display a 
+'see collector info' text which when click moves position of
+page to the colllector infomation tab.
+  - fix when text is long displaying in both boxes 
+
+Styling to fit pascal theme **
+
+add reffered links  back to basic info 

@@ -136,7 +136,7 @@ useEffect(() => {
         }
         
         else {
-            setSrc('src/images/seeCollection.jpeg');
+            setSrc(null);
         }
 
         //swabs are done outside main if else to override sterile pot
@@ -199,7 +199,7 @@ if (altNames) {
                 </Reveal>
                 <Reveal posY={200} delay={0.75} testName={testName} refresh={true}>
                 <div className='container-img'>
-                    <Container src={src} container={container} collectionInstruct={collectionInstruct}/>
+                    <Container src={src} container={container} collectionInstruct={collectionInstruct} addCollectInstruct={addCollectInstruct}/>
                 </div>
                 </Reveal>
             </div>  

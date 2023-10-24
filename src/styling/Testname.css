@@ -7,11 +7,11 @@
 }
 
 #testName-container {
-    width: 60%;
+    width: 50%;
 }
 
 #button-container {
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 
@@ -21,6 +21,7 @@
     font-family: 'Oxygen', sans-serif;
     font-size: 4rem;
     padding-left: 75px;
+    padding-bottom: 20px;
     margin: 0;
 }
 

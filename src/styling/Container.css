@@ -1,10 +1,11 @@
 .image-container {
     width: 70%;
-    height: 400px;
+    margin-top: 30px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid black 1px;
+   
 }
 
 #boxbox {
@@ -13,6 +14,12 @@
     width: 90%;
     flex-direction: column;
     
+}
+
+#boxbox h2 {
+    align-self: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 #imgimg img {
@@ -36,4 +43,11 @@
 
 #boxbox p {
     padding-top: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2rem;
+}
+
+#instructions p {
+    text-align: center;
 }
