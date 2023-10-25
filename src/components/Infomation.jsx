@@ -28,6 +28,7 @@ const [minVolPaed, setMinVolPaed] = useState('');
 const [notes, setNotes] = useState('');
 const [frequency, setFrequency] = useState('');
 const [orderingInfo, setOrderingInfo] = useState('');
+const [externalLab, setExternalLab] = useState('');
 
 const [storage, setStorage] = useState('');
 const [transport, setTransport] = useState('');
@@ -44,6 +45,10 @@ useEffect(() => {
     if (testInfo["Laboratory"]) {
         setLaboratory(testInfo["Laboratory"]);
     } else {setLaboratory(null)};
+    if (testInfo["External Laboratory"]) {
+        setExternalLab(testInfo["External Laboratory"]);
+    } else {setExternalLab(null)};
+    console.log(externalLab);
 
     if (testInfo["Ordering Information"]) {
         setOrderingInfo(testInfo["Ordering Information"]);
@@ -194,7 +199,7 @@ if (altNames) {
                 
                 <Reveal posX={200} delay={0.5} testName={testName} refresh={true}>
                     <div className='basicTest'>
-                        <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} altNames={altNames} laboratory={laboratory}  />
+                        <BasicTestInfo specimen={specimen}container={container} testcode={testcode} testInfo={testInfo} altNames={altNames} laboratory={laboratory} externalLab={externalLab} />
                     </div>
                 </Reveal>
                 <Reveal posY={200} delay={0.75} testName={testName} refresh={true}>

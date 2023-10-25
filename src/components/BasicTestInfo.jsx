@@ -2,14 +2,13 @@
 import '../styling/BasicTestInfo.css';
 import DepartmentContact from './DepartmentContact';
 
-export default function BasicTestInfo({specimen, container, testcode, testInfo, laboratory, altNames}) {
+export default function BasicTestInfo({specimen, testcode,laboratory, altNames, externalLab}) {
 
 
     return (
         <div className='text-container'>
-            <DepartmentContact laboratory={laboratory}/>
+            <DepartmentContact laboratory={laboratory} externalLab={externalLab}/>
             <p id='info'><b>Specimen type:</b> <span id='variable' >{specimen}</span></p>
-            <p id='info'><b>Container:</b> <span id='variable'>{container}</span></p>
             <p id='info'><b>CSR Test code:</b> <span id='variable' >{testcode}</span></p>
             {altNames ? <p id='info'><b>Alternate names:</b> <span id='variable'>{altNames}</span></p> : null }
         </div>

@@ -51,3 +51,8 @@
 #instructions p {
     text-align: center;
 }
+
+#instructions {
+    align-self: center;
+    margin-top: 20px;
+}

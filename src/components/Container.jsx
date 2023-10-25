@@ -71,6 +71,17 @@ export default function Container({src, collectionInstruct, container, addCollec
         } 
     }
 
+    if (addCollectInstruct) {
+        if (addCollectInstruct.length > 200) {
+            longInstructions = true;
+        }
+    }
+    if (collectionInstruct) {
+        if (collectionInstruct.length > 200) {
+            longInstructions = true;
+        }
+    }
+
     if (addCollectInstruct || collectionInstruct) {
         if (addCollectInstruct && collectionInstruct) {
             instructions = `${collectionInstruct}. ${addCollectInstruct}`
@@ -87,13 +98,15 @@ export default function Container({src, collectionInstruct, container, addCollec
             <div id='boxbox'>
                 
                 <h2>{container}</h2>
-                {src ? <div id='imgimg' style={style}> <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/assets/documents/tube-guide-v2-final.pdf?20230526'> <motion.img src={src} alt="image Goes here"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                /> </a></div> : null }
+                {src ? <div id='imgimg' style={style}> <motion.img src={src} alt="image Goes here"
+                /> </div> : null }
                 <div id='instructions'>
                 
-                {longInstructions ? <p>See collector Infomation</p> : null }
+                {longInstructions ?
+                <div>
+                <a id='departmentContent' onClick={() => window.scrollBy(0, 850)} class={'ui teal image label large'}>
+                    See collection instructions 👇</a> </div>
+                  : null }
                 {!longInstructions && instructions ? <p>{instructions}</p> : null}
                 
                 </div>
