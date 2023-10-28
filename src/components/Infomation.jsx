@@ -9,6 +9,7 @@ import Testname from './Testname';
 import Container from './Container';
 import Reveal from './Reveal';
 import Footer from './Footer';
+import FooterLinks from './FooterLinks';
 
 
 
@@ -48,7 +49,6 @@ useEffect(() => {
     if (testInfo["External Laboratory"]) {
         setExternalLab(testInfo["External Laboratory"]);
     } else {setExternalLab(null)};
-    console.log(externalLab);
 
     if (testInfo["Ordering Information"]) {
         setOrderingInfo(testInfo["Ordering Information"]);
@@ -138,6 +138,9 @@ useEffect(() => {
             setSrc('src/images/ACDtube.jpeg');
         } else if (testInfo['Container'].includes('Plain')) {
             setSrc('src/images/Plainredtop.webp');
+        } else if (testInfo['Container'].includes('Lithium Heparin - Gel (mint green)') ||
+        testInfo["Test Code"] === "AMM")  {
+            setSrc('src/images/LH(GEL).png');
         }
         
         else {
@@ -235,20 +238,31 @@ if (altNames) {
                 <div id='Extra-contact-info'>
                     <div id='extra-contact-flex'>
                         <div id='boxOne'>
-                            <p>This section is placeholder for--</p>
-                            <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
+                        <h3>Useful Links</h3>
+                            <FooterLinks href={'https://www.austinpathology.org.au/'} name={'Home'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/values'} name={'Our Values'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/specialists#specialists'} name={'Our Specialists'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/specialists#directors'} name={'Our Directors'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/find-us'} name={'Find Us'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/department-directory#staff'} name={'Key Staff'} />
+
                         </div>
                         <div id='boxTwo'>
-                        <p>-- more contacts and links</p>
-                        <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
-                            <p>@@AustinPath</p>
+                        <h3>Services</h3>
+                            <FooterLinks href={'https://www.austinpathology.org.au/research'} name={'Trail & Research'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/transfusions'} name={'Blood Transfusion'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/diagnostic-services'} name={'Diagnostic Services'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/doctor-services'} name={'Doctor Services'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/patient-information'} name={'Patient Services'} />
+                            <FooterLinks href={'https://www.austinpathology.org.au/collection-centres'} name={'Collection Centres'} />
+                      
+                            
+                        </div>
+                        <div id='boxThree'>
+                            <h3>Creator</h3>
+                            <FooterLinks href={'https://www.linkedin.com/in/nick-amos-2a2688247'} name={'Linkedin'} />
+                            <FooterLinks href={'https://github.com/nickAmos'} name={'Github'}/>
+                            <p>nick.amos2000@gmail.com</p>
                         </div>
                     </div>
 
@@ -262,3 +276,12 @@ if (altNames) {
 }
 
 
+
+
+/*   <h3>Useful links</h3>
+                            <p>Home</p>
+                            <p>Our Values</p>
+                            <p>Our Specialists</p>
+                            <p>Our Directors</p>
+                            <p>Find Us</p>
+                            <p>Key Staff</p> */

@@ -1,0 +1,18 @@
+
+#triangle {
+    color: white;
+}
+
+#linkname {
+    color: white;
+    font-family: 'Oxanium', cursive;
+}
+
+.Link-container {
+    padding-bottom: 15px;
+}
+
+
+#linkname:hover {
+    color: #68c4af;
+}

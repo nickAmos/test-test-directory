@@ -52,12 +52,14 @@ input:focus::placeholder {
   height: auto;
   font-family: 'Oxanium', cursive;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
   padding: 10px 0px 10px 20px;
   border-bottom: #2BAE66 1px solid;
   
  }
 
  .test-result:hover {
-    background-color: #C5FAD5;
+    background-color: #68c4afc4;
     cursor: pointer;
  }

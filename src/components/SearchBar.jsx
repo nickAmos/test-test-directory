@@ -36,7 +36,7 @@ const selectedTest = (item) => {
                     
                     .map((item) => (
                         <div className='test-result' key={item} onClick={() => {selectedTest(item)
-                        console.log(item)}}>{item}</div>
+                        console.log(item)}}><p>{item}</p></div>
                     ))}
             </div>
         </div>

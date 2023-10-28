@@ -55,12 +55,20 @@ export default function Storage({storage, addStorage, transport, addTransport, l
         } else {
             storeFrozen = false;
         }
+        if (storageString.includes('at -20')) {
+            storeFrozen = true;
+            
+        } else {
+            storeFrozen = false;
+        }
 
         if (storageString.includes('at 4')) {
             storeFridge = true;
         } else {
             storeFridge = false;
         }
+
+       
 
         if (storageString.includes('specimen at room temperature')) {
             storeRoomT = true;

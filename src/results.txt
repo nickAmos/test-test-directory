@@ -426,13 +426,21 @@ Ordering infomation for collector (collector info) (done)
 fix 24 Urine storage instructions (done)
 
 
-fix image display and change collection instructions. 
 
 if additional collection instructions are > than X display a 
 'see collector info' text which when click moves position of
 page to the colllector infomation tab.
-  - fix when text is long displaying in both boxes 
+  - fix when text is long displaying in both boxes  (done)
 
 Styling to fit pascal theme **
 
-add reffered links  back to basic info 
+
+fix image display and change collection instructions. (done)
+
+
+add real links to footer 
+ - order of draw and other irrelevent link on old directory
+ 
+
+ Fix header to be cooler
+

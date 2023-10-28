@@ -27,9 +27,17 @@ export default function Container({src, collectionInstruct, container, addCollec
                 backgroundColor: '#e5f7ff'
             }
         }
-        if (container.includes('Lithium Heparin - No Gel (green)')) {
+        if (container.includes('Lithium Heparin')) {
             style = {
                 backgroundColor: '#deffea'
+            }
+        }
+
+        if (addCollectInstruct) {
+            if (addCollectInstruct.includes('Lithium Heparin tube on ice is the preferred sample type.')) {
+                style = {
+                    backgroundColor: '#deffea'
+                }
             }
         }
         if (container === 'Trace Metal Tube (Navy top)') {
@@ -62,6 +70,7 @@ export default function Container({src, collectionInstruct, container, addCollec
                 backgroundColor: '#f9ebbe'
             }
         }
+
     }
 
 

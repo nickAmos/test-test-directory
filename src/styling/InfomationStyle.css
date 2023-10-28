@@ -105,32 +105,37 @@
 }
 
 #Extra-contact-info {
-  height: 35vh;
-  width: 100%;
+  height: auto;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.821);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 #extra-contact-flex {
   display: flex;
-  height: 80%;
   width: 80%;
- 
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#extra-contact-flex h3 {
+  padding-top: 30px;
+  
 }
 
-#boxOne, #boxTwo {
-  width: 50%;
+#boxOne, #boxTwo, #boxThree {
+  width: auto;
   height: 100%;
   color: white;  
 }
 
-#boxTwo{
-  text-align: right;
+#extra-contact-flex h3 {
+  font-family: 'Oxygen', sans-serif; 
 }
+
+
 
 
 
