@@ -106,7 +106,7 @@ export default function Storage({storage, addStorage, transport, addTransport, l
         {centrifugeNo ? <HelpfulButton title={"Do not centrifuge"} icon={"stop circle outline"} backgroundColor={"#ff7373"}/> : null}
         {collectOnIce ? <HelpfulButton title={"Collect on ice"} icon={"cubes"} backgroundColor={"#c6e2ff"}/> : null}
         {aliquotFreeze ? <HelpfulButton title={"Aliquot and freeze"} icon={"snowflake"} backgroundColor={"#dc61bd"}/> : null}
-        {wrapfoil ? <HelpfulButton title={"Wrap in aluminium foil"} icon={"snowflake"} backgroundColor={"#dc61bd"}/> : null}
+        {wrapfoil ? <HelpfulButton title={"Wrap in aluminium foil"} icon={"shield alternate"} backgroundColor={"#dc61bd"}/> : null}
         </div>
     )
 

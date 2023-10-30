@@ -84,10 +84,11 @@
   height: auto;
   margin: 25px;
   background-color: white;
-  border-bottom: 4px solid #68c4af;
-  border-left: 2px solid #68c4af;
-  border-right: 4px solid #68c4af;
-  border-top: 2px solid #68c4af;
+  border-bottom: 2px solid #cecfd3;
+  border-left: 2px solid #cecfd3;
+  border-right: 2px solid #cecfd3;
+  border-top: 2px solid #cecfd3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
 }
 
@@ -98,7 +99,7 @@
 #footer-container {
   height: 20vh;
   width: 100vw;
-  background-color: #68c4af;
+  background-color: #cecfd3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +108,7 @@
 #Extra-contact-info {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.821);
+  background-color: #1f2937;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -13,9 +13,9 @@
     height: 3.5rem;
     font-size: larger;
     font-family: 'Oxanium', cursive;
-    border: 2px solid #68c4af;
-    border-bottom: 4px solid #68c4af;
-    border-right: 4px solid #68c4af;
+    border: 2px solid #1f2937;
+    border-bottom: 4px solid #1f2937;
+    border-right: 4px solid #1f2937;
     border-radius: 5px;
 }
 
@@ -33,10 +33,10 @@ input:focus::placeholder {
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 30px 5px 5px 30px ;
-  border-bottom: 2px solid #68c4af;
-  border-left: 2px solid #68c4af;
-  border-right: 2px solid #68c4af;
-  border-top: 2px solid #68c4af;
+  border-bottom: 2px solid #1f2937;
+  border-left: 2px solid #1f2937;
+  border-right: 2px solid #1f2937;
+  border-top: 2px solid #1f2937;
   box-sizing: content-box;
   margin-bottom: 50px;
  }
@@ -55,11 +55,11 @@ input:focus::placeholder {
   display: flex;
   align-items: center;
   padding: 10px 0px 10px 20px;
-  border-bottom: #2BAE66 1px solid;
+  border-bottom: #1f2937 1px solid;
   
  }
 
  .test-result:hover {
-    background-color: #68c4afc4;
+    background-color: #cecfd3;
     cursor: pointer;
  }

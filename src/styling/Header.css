@@ -1,7 +1,7 @@
 #main-header {
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.821); ;
+    background-color: #1f2937; ;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
 }
 
 .motion.div {
-    background-color: rgba(0, 0, 0, 0.821);
+    background-color: #1f2937;
 }
 
 #left-box, #middle-box, #right-box {
@@ -33,7 +33,7 @@
 }
 
 #contact-path {
-    background-color: rgb(47, 45, 45);
+    background-color: #1f2937;
     display: flex;
     justify-content: center;
     align-items: center ;
