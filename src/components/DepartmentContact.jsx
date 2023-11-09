@@ -31,10 +31,10 @@ let extension;
         extension = 'add extension here';
     } else if (laboratory.includes('Ref')) {
         style = 'ui teal image label large'
-        extension = 'add extension here';
         extension = externalLab;
     } else if (laboratory.includes('Clinical')) {
         style = 'ui olive image label large'
+        extension = 'add extension here'
     }
 
 

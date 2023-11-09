@@ -35,7 +35,7 @@ export default function Header() {
             </div>
 
             <div id='right-box'>
-            <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/department-directory'>
+            <a target='_blank' rel='noreferrer' href='https://www.austinpathology.org.au/test-directory'>
                 <Reveal animated='move up'>
                     <Reveal.Content visible>
                         <div id='contact-path'>

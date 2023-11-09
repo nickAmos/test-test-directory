@@ -7,7 +7,7 @@ import '../styling/Storage.css';
 export default function Storage({storage, addStorage, transport, addTransport, labNotes, addCollectInstruct, collectionInstruct, testName, laboratory}) {
 
     let storageString = (`${storage} ${addStorage} ${transport} ${addTransport}`).toLocaleLowerCase();
-    let transportString = (`${addCollectInstruct} ${collectionInstruct} ${testName}`).toLocaleLowerCase();
+    let transportString = (`${addCollectInstruct} ${transport} ${addTransport} ${collectionInstruct} ${testName}`).toLocaleLowerCase();
     let centrifugeString = (`${labNotes} ${addTransport} ${collectionInstruct} ${addCollectInstruct} ${storage} ${addStorage}`).toLocaleLowerCase();
     let collectOnIce = false;
     let aliquotFreeze = false;
@@ -17,6 +17,12 @@ export default function Storage({storage, addStorage, transport, addTransport, l
     let centrifugeNo = false;
     let wrapfoil = false;
 
+    console.log(storageString);
+
+    if (storageString.includes('freeze')) {
+        console.log('yes');
+    }
+
     if (transportString.includes('place tube on ice') 
         || 
         transportString.includes('collect on ice')
@@ -24,6 +30,8 @@ export default function Storage({storage, addStorage, transport, addTransport, l
         transportString.includes('laboratory on ice')
         ||
         transportString.includes('pot on ice')
+        ||
+        transportString.includes('transport on ice')
         ) {
             collectOnIce = true; 
         } else {
@@ -43,39 +51,29 @@ export default function Storage({storage, addStorage, transport, addTransport, l
        aliquotFreeze = true;
     } else {
         aliquotFreeze = false;
-    }
+    };
 
 
-    if (laboratory === 'Referred Test') {
+    
 
-        if (storageString.includes('store serum frozen') 
-            || 
-            storageString.includes('store frozen')) {
+    if (storageString.includes('store serum frozen') || storageString.includes('store frozen') || storageString.includes('freeze') || storageString.includes('at -20')) {
             storeFrozen = true;
+            console.log('includes frozen');
         } else {
             storeFrozen = false;
-        }
-        if (storageString.includes('at -20')) {
-            storeFrozen = true;
-            
-        } else {
-            storeFrozen = false;
-        }
+        };
 
-        if (storageString.includes('at 4')) {
+    if (storageString.includes('at 4')) {
             storeFridge = true;
         } else {
             storeFridge = false;
-        }
-
-       
-
-        if (storageString.includes('specimen at room temperature')) {
+        };
+    if (storageString.includes('specimen at room temperature')) {
             storeRoomT = true;
         } else {
             storeRoomT = false;
         }
-    }
+    
 
 
 
@@ -95,6 +93,8 @@ export default function Storage({storage, addStorage, transport, addTransport, l
      ) {
     wrapfoil = true;
 } 
+
+console.log(storeFrozen);
 
     
 

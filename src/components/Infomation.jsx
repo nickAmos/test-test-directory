@@ -117,8 +117,11 @@ useEffect(() => {
         }
         else if (testInfo['Container'] === '9ml EDTA (purple)') {
             setSrc('src/images/9mlEDTA.png');
+        } 
+        else if (testInfo['Container'].includes('ESR')) {
+            setSrc('src/images/ESRTUBE.png');
         }
-//put swabs here to avoid swap to sterile pot 
+ //put swabs here to avoid swap to sterile pot 
 
         else if (testInfo['Container'].includes('Fluoride')) {
             setSrc('src/images/fluorideOxalate.jpeg');

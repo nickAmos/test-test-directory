@@ -33,6 +33,12 @@ export default function Container({src, collectionInstruct, container, addCollec
             }
         }
 
+        if (container.includes('ESR')) {
+            style = {
+                backgroundColor:'#EBE3D5'
+            }
+        }
+
         if (addCollectInstruct) {
             if (addCollectInstruct.includes('Lithium Heparin tube on ice is the preferred sample type.')) {
                 style = {
