@@ -131,7 +131,7 @@ useEffect(() => {
             setSrc('src/images/CSFTUBEbad.png');
         }
         
-        else if (testInfo['Container'].includes('Sterile container') || testInfo['Container'].includes('Sterile Container') ) {
+        else if ((testInfo['Container'].includes('Sterile container') || testInfo['Container'].includes('Sterile Container')) && !testInfo['Container'].includes('Swab') ) {
             setSrc('src/images/sterile-pot.png');
         }
         else if (testInfo['Container'].includes('Faecal Pot')) {

@@ -29,8 +29,8 @@
 
 #imgimg {
     align-self: center;
-    width: 80%;
-    background-color: aliceblue;
+    width: 500px;
+    background-color: rgb(124, 155, 182);
     border-radius: 15px;
     display: flex;
     align-items: center;

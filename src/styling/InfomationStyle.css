@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
-    
-    
-    
   }
   
 
@@ -100,7 +97,7 @@
 #footer-container {
   height: 20vh;
   width: 100vw;
-  background-color: #cecfd3;
+  background-color: #27374ed8;
   display: flex;
   justify-content: center;
   align-items: center;

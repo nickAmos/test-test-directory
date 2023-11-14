@@ -35,6 +35,9 @@ let extension;
     } else if (laboratory.includes('Clinical')) {
         style = 'ui olive image label large'
         extension = 'add extension here'
+    } else if (laboratory.includes('Blood Bank')) {
+        style = 'ui pink image label large'
+        extension = 'add ext here'
     }
 
 
