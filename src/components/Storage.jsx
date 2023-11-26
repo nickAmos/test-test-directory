@@ -19,9 +19,7 @@ export default function Storage({storage, addStorage, transport, addTransport, l
 
     console.log(storageString);
 
-    if (storageString.includes('freeze')) {
-        console.log('yes');
-    }
+ 
 
     if (transportString.includes('place tube on ice') 
         || 
@@ -58,16 +56,20 @@ export default function Storage({storage, addStorage, transport, addTransport, l
 
     if (storageString.includes('store serum frozen') || storageString.includes('store frozen') || storageString.includes('freeze') || storageString.includes('at -20')) {
             storeFrozen = true;
-            console.log('includes frozen');
+            
         } else {
             storeFrozen = false;
         };
 
-    if (storageString.includes('at 4')) {
+    if (storageString.includes('at 4') && (!storageString.includes('store primary sodium citrate refrigerated at 4'))) {
             storeFridge = true;
         } else {
             storeFridge = false;
         };
+
+    if (storageString.includes('primary tube may be stored at 4')) {
+        storeFridge = false;
+    }
     if (storageString.includes('specimen at room temperature')) {
             storeRoomT = true;
         } else {
@@ -94,7 +96,7 @@ export default function Storage({storage, addStorage, transport, addTransport, l
     wrapfoil = true;
 } 
 
-console.log(storeFrozen);
+
 
     
 

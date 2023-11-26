@@ -10,13 +10,18 @@ export default function Testname({testName, storage, addStorage, transport, addT
 
     //set state of button text and image based on if 
     //'freeze'/ 'frozen' is container in tesstring.
+   let style = {fontSize: '4rem'}
+
+    if (testName.length > 25) {
+        style = {fontSize: '3rem'};
+    }
     
 
     return(
         <>
         <div className='nameandbutton-container'>
             <div id='testName-container'>
-            <h1 id='testName'>{testName}</h1> 
+            <h1 id='testName' style={style} >{testName}</h1> 
             </div>  
             <div id='button-container'>
                 <Storage 

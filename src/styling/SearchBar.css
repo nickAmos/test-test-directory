@@ -60,6 +60,6 @@ input:focus::placeholder {
  }
 
  .test-result:hover {
-    background-color: #858be09c;
+    background-color: #5d66db9c;
     cursor: pointer;
  }
