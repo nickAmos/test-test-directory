@@ -37,18 +37,9 @@ export default App
 
 
 /*
- "Alternate Names": 
-            "Cerner Test Name": 
-            "Laboratory": 
-            "Specimen": "
-            "Container": "Serum tube (gold cap OR red cap w. yellow insert)",
-            "Collection Instruction": 
-            "Additional Collection Instructions": "Haemolysed samples will not be analysed.",
-            "Minimum Adult Volume": "5mL",
-            "Minimum Paediatric Volume": "None",
-            "Frequency": "Daily",
-            "Reference Interval": 
-            "Container ID": 
-            "Storage Instructions": 
-            "Additional (Storage) Instructions": 
-            "Transport Instructions": */
+ need to add:
+
+ both tubes shown for karyo type test lith hep + EDTA.
+ 
+ 
+ */
