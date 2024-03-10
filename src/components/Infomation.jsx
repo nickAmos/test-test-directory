@@ -10,6 +10,24 @@ import Container from './Container';
 import Reveal from './Reveal';
 import Footer from './Footer';
 import FooterLinks from './FooterLinks';
+import EDTA9 from '../images/9mlEDTA.png';
+import EDTA4 from '../images/EDTATUBE.png';
+import UC24 from '../images/24UC.jpeg';
+import ACD from '../images/ACDtube.jpeg';
+import Bswab from '../images/bacterialSwab.jpeg';
+import citrate from '../images/CitrateTube.png';
+import CSF from '../images/CSFTUBEbad.png';
+import ESR from '../images/ESRTUBE.png';
+import fecal from '../images/fecal-pot.png';
+import fluoride from '../images/fluorideOxalate.jpeg';
+import lithHep from '../images/LH(GEL).png';
+import lithHepNG from '../images/LHNG.png';
+import seeColl from '../images/seeCollection.jpeg';
+import serum from '../images/SerumGel.png';
+import pot from '../images/sterile-pot.png';
+import trace from '../images/TRACE.png';
+import Vswab from '../images/viralswabPOOR.jpeg';
+import SNG from '../images/Plainredtop.webp';
 
 
 
@@ -101,49 +119,49 @@ useEffect(() => {
     if (testInfo['Container']) {
         setContainer(testInfo['Container'])
         if (testInfo['Container'] === 'EDTA (purple)') {
-            setSrc('src/images/EDTATUBE.png');
+            setSrc(EDTA4);
         } 
          else if (testInfo['Container'] === 'Serum tube (gold cap OR red cap w. yellow insert)') {
-            setSrc('src/images/SerumGel.png');
+            setSrc(serum);
         }
         else if (testInfo['Container'] === 'Sodium Citrate (Blue top)') {
-            setSrc('src/images/CitrateTube.png');
+            setSrc(citrate);
         }
         else if (testInfo['Container'].includes('Lithium Heparin - No Gel (green)')) {
-            setSrc('src/images/LHNG.png');
+            setSrc(lithHepNG);
         }
         else if (testInfo['Container'] === 'Trace Metal Tube (Navy top)') {
-            setSrc('src/images/TRACE.png');
+            setSrc(trace);
         }
         else if (testInfo['Container'] === '9ml EDTA (purple)') {
-            setSrc('src/images/9mlEDTA.png');
+            setSrc(EDTA9);
         } 
         else if (testInfo['Container'].includes('ESR')) {
-            setSrc('src/images/ESRTUBE.png');
+            setSrc(ESR);
         }
  //put swabs here to avoid swap to sterile pot 
 
         else if (testInfo['Container'].includes('Fluoride')) {
-            setSrc('src/images/fluorideOxalate.jpeg');
+            setSrc(fluoride);
         } else if (testInfo['Container'].includes('24')) {
-            setSrc('src/images/24UC.jpeg');
+            setSrc(UC24);
         } else if (testInfo['Container'].includes('CSF')) {
-            setSrc('src/images/CSFTUBEbad.png');
+            setSrc(CSF);
         }
         
         else if ((testInfo['Container'].includes('Sterile container') || testInfo['Container'].includes('Sterile Container')) && !testInfo['Container'].includes('Swab') ) {
-            setSrc('src/images/sterile-pot.png');
+            setSrc(pot);
         }
         else if (testInfo['Container'].includes('Faecal Pot')) {
-            setSrc('src/images/fecal-pot.png');
+            setSrc(fecal);
 
         } else if (testInfo['Container'].includes('ACD')) {
-            setSrc('src/images/ACDtube.jpeg');
+            setSrc(ACD);
         } else if (testInfo['Container'].includes('Plain')) {
-            setSrc('src/images/Plainredtop.webp');
+            setSrc(SNG);
         } else if (testInfo['Container'].includes('Lithium Heparin - Gel (mint green)') ||
         testInfo["Test Code"] === "AMM")  {
-            setSrc('src/images/LH(GEL).png');
+            setSrc(lithHep);
         }
         
         else {
@@ -153,7 +171,7 @@ useEffect(() => {
         //swabs are done outside main if else to override sterile pot
 
         if (testInfo['Container'].includes('Swab - Bacterial')) {
-            setSrc('src/images/bacterialSwab.jpeg');
+            setSrc(Bswab);
         } 
         
     } else {setContainer(null)};
